@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg" cx="75%" cy="10%" r="90%">
+      <stop offset="0%" stop-color="#1c1616" />
+      <stop offset="45%" stop-color="#121010" />
+      <stop offset="100%" stop-color="#090909" />
+    </radialGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5E7E4" />
+      <stop offset="55%" stop-color="#D7AAA4" />
+      <stop offset="100%" stop-color="#C99790" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="0.5" y="0.5" width="1199" height="629" fill="none" stroke="#D7AAA4" stroke-opacity="0.25" />
+  <text x="80" y="290" font-family="Georgia, 'Playfair Display', serif" font-size="72" fill="url(#text-grad)">ELQ CLEANING LLC</text>
+  <text x="80" y="345" font-family="Arial, sans-serif" font-size="28" letter-spacing="4" fill="#ADADAD">HOUSE CLEANING SERVICE</text>
+  <text x="80" y="420" font-family="Georgia, 'Playfair Display', serif" font-size="34" fill="#FAFAFA">A cleaner home. A calmer life.</text>
+  <text x="80" y="470" font-family="Arial, sans-serif" font-size="24" letter-spacing="2" fill="#D7AAA4">WEEKLY · BIWEEKLY · MONTHLY</text>
+  <text x="80" y="560" font-family="Arial, sans-serif" font-size="26" fill="#FAFAFA">(480) 546-1725</text>
+</svg>

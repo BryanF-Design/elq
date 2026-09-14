@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "ELQ Cleaning LLC — Servicio Profesional de Limpieza del Hogar",
+    "description": "ELQ Cleaning LLC ofrece limpieza residencial personalizada semanal, quincenal o mensual. Llama al (480) 546-1725 para una cotización gratuita."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "whyElq": "Por qué ELQ",
+    "process": "Proceso",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "getEstimate": "Cotización Gratuita",
+    "callNow": "Llamar Ahora",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "language": "Idioma",
+    "skipToContent": "Ir al contenido"
+  },
+  "hero": {
+    "badge": "Limpieza Profesional del Hogar",
+    "titleLine1": "Un hogar más limpio.",
+    "titleLine2": "Una vida más tranquila.",
+    "subtitle": "Limpieza residencial profesional, diseñada alrededor de tu hogar, tu horario y tu tranquilidad.",
+    "ctaEstimate": "Cotización Gratuita",
+    "ctaCall": "Llamar al (480) 546-1725",
+    "frequencyBadge": "Semanal · Quincenal · Mensual",
+    "imageAlt": "Un espacio recién limpiado, luminoso y con luz natural suave",
+    "scrollHint": "Desplázate"
+  },
+  "trust": {
+    "items": [
+      {
+        "title": "Servicio Confiable",
+        "description": "Limpiezas en las que puedes confiar, cita tras cita."
+      },
+      {
+        "title": "Horarios Flexibles",
+        "description": "Semanal, quincenal o mensual — adaptado a tu rutina."
+      },
+      {
+        "title": "Atención al Detalle",
+        "description": "Los detalles pequeños se cuidan con la misma dedicación que los grandes."
+      },
+      {
+        "title": "Limpieza Residencial",
+        "description": "Enfocados por completo en hogares, desde una habitación hasta la propiedad completa."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Lo Que Ofrecemos",
+    "heading": "Nuestros Servicios de Limpieza",
+    "subheading": "Una gama de servicios de limpieza residencial que se pueden combinar y programar según tu forma de vivir.",
+    "frequencyNote": "Disponible semanal, quincenal o mensualmente.",
+    "items": [
+      {
+        "title": "Limpieza Recurrente",
+        "description": "Mantenimiento continuo que conserva cada habitación limpia entre visitas, con el horario que elijas."
+      },
+      {
+        "title": "Limpieza Profunda",
+        "description": "Una limpieza completa y minuciosa que llega a los detalles que una visita rutinaria no cubre."
+      },
+      {
+        "title": "Limpieza de Mudanza",
+        "description": "Un reinicio completo para un hogar vacío, listo para el siguiente capítulo — el tuyo o el de alguien más."
+      },
+      {
+        "title": "Limpieza de Cocina",
+        "description": "Encimeras, electrodomésticos, gabinetes y pisos, limpiados con atención a las superficies que usas cada día."
+      },
+      {
+        "title": "Limpieza de Baños",
+        "description": "Una limpieza cuidadosa y desinfectada para cada accesorio y superficie, del espejo al piso."
+      },
+      {
+        "title": "Recámaras y Áreas Comunes",
+        "description": "Sacudido, pisos y orden que convierten los espacios compartidos en lugares que realmente disfrutas."
+      }
+    ]
+  },
+  "whyElq": {
+    "eyebrow": "Por Qué ELQ",
+    "heading": "¿Por Qué Elegir ELQ Cleaning?",
+    "subheading": "ELQ Cleaning se construye alrededor de una idea: tu hogar merece una rutina de limpieza que se adapte a tu vida, no al revés.",
+    "points": [
+      {
+        "title": "Planes de limpieza personalizados",
+        "description": "Cada hogar es distinto, así que cada plan se arma según tus espacios, prioridades y preferencias."
+      },
+      {
+        "title": "Horarios flexibles",
+        "description": "Elige servicio semanal, quincenal o mensual — y ajústalo cuando tu rutina cambie."
+      },
+      {
+        "title": "Atención al detalle",
+        "description": "Tratamos los detalles — zoclos, accesorios, bordes — como parte del trabajo, no como un extra."
+      },
+      {
+        "title": "Respeto por tu hogar",
+        "description": "Nos movemos por tu espacio con cuidado y atención, tal como nos gustaría que trataran el nuestro."
+      },
+      {
+        "title": "Rutinas de limpieza consistentes",
+        "description": "El mismo nivel de cuidado, visita tras visita, para que siempre sepas qué esperar."
+      }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "La Diferencia",
+    "heading": "Antes y Después",
+    "subheading": "Desliza para ver el tipo de transformación que una limpieza a fondo genera en una habitación.",
+    "beforeLabel": "Antes",
+    "afterLabel": "Después",
+    "disclaimer": "Ilustración de referencia — será reemplazada con fotografía real de proyectos de ELQ."
+  },
+  "process": {
+    "eyebrow": "Cómo Funciona",
+    "heading": "Un camino sencillo hacia un hogar más limpio",
+    "subheading": "Desde tu primer mensaje hasta un hogar impecable, el proceso está diseñado para ser simple y claro.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Solicita tu Cotización",
+        "description": "Cuéntanos sobre tu hogar y lo que necesitas — toma solo un par de minutos."
+      },
+      {
+        "number": "02",
+        "title": "Elige tu Horario",
+        "description": "Elige servicio semanal, quincenal o mensual, en el día y la hora que te convenga."
+      },
+      {
+        "number": "03",
+        "title": "Nosotros Limpiamos",
+        "description": "Nuestro equipo cuida tu hogar con la misma atención al detalle que tú le darías."
+      },
+      {
+        "number": "04",
+        "title": "Disfruta tu Hogar",
+        "description": "Regresa a un espacio limpio y tranquilo — y anticipa la próxima visita."
+      }
+    ]
+  },
+  "frequency": {
+    "eyebrow": "A tu Ritmo",
+    "heading": "Semanal. Quincenal. Mensual.",
+    "subheading": "Tu rutina marca el ritmo. Elige la frecuencia que se adapte a tu hogar y cámbiala cuando tu vida lo requiera.",
+    "options": [
+      {
+        "name": "Semanal",
+        "description": "La opción más constante — ideal para hogares ocupados que quieren su casa limpia cada semana."
+      },
+      {
+        "name": "Quincenal",
+        "description": "Un ritmo equilibrado que mantiene todo fresco sin una visita cada semana."
+      },
+      {
+        "name": "Mensual",
+        "description": "Un reinicio a fondo una vez al mes, ideal para hogares con menos tránsito."
+      }
+    ],
+    "note": "¿No sabes cuál te conviene? Podemos ayudarte a decidir al solicitar tu cotización."
+  },
+  "gallery": {
+    "eyebrow": "Una Mirada Más de Cerca",
+    "heading": "Los detalles que nos importan",
+    "subheading": "Un vistazo a los espacios y detalles de los que trata la limpieza residencial.",
+    "disclaimer": "Composiciones de referencia — listas para ser reemplazadas con fotografía real del trabajo de ELQ.",
+    "items": [
+      { "alt": "Una encimera de cocina limpia y organizada con luz natural" },
+      { "alt": "Un baño ordenado con accesorios limpios y toallas dobladas" },
+      { "alt": "Una cama bien tendida en una recámara tranquila y organizada" },
+      { "alt": "Una sala luminosa con superficies ordenadas y sin polvo" },
+      { "alt": "Detalle de cerca de una superficie limpia y pulida" },
+      { "alt": "Un clóset organizado con ropa de cama doblada" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Opiniones de Clientes",
+    "heading": "Lo Que Dicen los Clientes",
+    "subheading": "Apenas comenzamos a reunir reseñas — este espacio está reservado para comentarios reales de clientes reales de ELQ.",
+    "emptyTitle": "Las reseñas de clientes llegarán pronto",
+    "emptyDescription": "A medida que ELQ Cleaning complete más proyectos residenciales, aquí aparecerán testimonios verificados de clientes."
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "heading": "Preguntas Frecuentes",
+    "subheading": "Respuestas a las preguntas que más escuchamos de los propietarios.",
+    "items": [
+      {
+        "question": "¿Qué zonas limpian?",
+        "answer": "ELQ Cleaning se enfoca en propiedades residenciales — cocinas, baños, recámaras, áreas comunes y otros espacios del hogar. Cuéntanos la distribución de tu casa al solicitar una cotización."
+      },
+      {
+        "question": "¿Con qué frecuencia puedo programar la limpieza?",
+        "answer": "Puedes programar limpieza semanal, quincenal o mensual, según se adapte mejor a la rutina de tu hogar."
+      },
+      {
+        "question": "¿Necesito estar en casa?",
+        "answer": "Depende completamente de ti. Algunos clientes prefieren estar en casa durante la visita, mientras que otros organizan el acceso para que la limpieza ocurra mientras están fuera. Indícanos tu preferencia al agendar."
+      },
+      {
+        "question": "¿Puedo solicitar servicio recurrente?",
+        "answer": "Sí. El servicio recurrente semanal, quincenal o mensual es una de las formas más populares en que los clientes trabajan con ELQ Cleaning."
+      },
+      {
+        "question": "¿Cómo solicito una cotización?",
+        "answer": "Llama al (480) 546-1725 o llena el formulario de cotización en esta página con algunos datos sobre tu hogar, y te contactaremos."
+      },
+      {
+        "question": "¿Qué debo hacer antes de mi cita de limpieza?",
+        "answer": "Guardar objetos personales y de valor con anticipación ayuda a que nuestro equipo se enfoque por completo en la limpieza. Si tienes instrucciones específicas para alguna habitación, avísanos con antelación."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Comenzar",
+    "heading": "¿Listo para un hogar más limpio?",
+    "subheading": "Llama ahora para una conversación rápida, o envíanos algunos datos y te contactaremos con una cotización.",
+    "callCta": "Llamar Ahora",
+    "callSubtext": "Habla con nosotros directamente",
+    "formCta": "Solicitar Cotización",
+    "form": {
+      "heading": "Solicitar una Cotización",
+      "name": "Nombre Completo",
+      "namePlaceholder": "Jane Smith",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "(480) 555-0100",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "jane@email.com",
+      "serviceType": "Tipo de Servicio",
+      "serviceTypePlaceholder": "Selecciona un servicio",
+      "frequency": "Frecuencia de Limpieza",
+      "frequencyPlaceholder": "Selecciona una frecuencia",
+      "propertyType": "Tipo de Propiedad",
+      "propertyTypePlaceholder": "Selecciona un tipo de propiedad",
+      "propertyTypeOptions": {
+        "house": "Casa",
+        "apartment": "Departamento / Condominio",
+        "townhome": "Casa Adosada"
+      },
+      "bedrooms": "Recámaras",
+      "bathrooms": "Baños",
+      "preferredDate": "Fecha Preferida",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos un poco sobre tu hogar y lo que buscas.",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando…",
+      "successTitle": "Gracias — solicitud recibida.",
+      "successMessage": "Hemos recibido tus datos y te contactaremos en breve. Si es urgente, llama directamente al (480) 546-1725.",
+      "errorTitle": "Algo salió mal",
+      "errorMessage": "No pudimos enviar tu solicitud en este momento. Inténtalo de nuevo o llama directamente al (480) 546-1725.",
+      "notConfiguredTitle": "Las solicitudes en línea aún no están conectadas",
+      "notConfiguredMessage": "Este formulario todavía no está conectado a un servicio de correo. Llama al (480) 546-1725 y con gusto te ayudamos directamente.",
+      "errors": {
+        "required": "Este campo es obligatorio.",
+        "invalidEmail": "Ingresa un correo electrónico válido.",
+        "invalidPhone": "Ingresa un número de teléfono válido."
+      }
+    }
+  },
+  "mobileCta": {
+    "call": "Llamar",
+    "estimate": "Cotización Gratuita"
+  },
+  "footer": {
+    "description": "Limpieza residencial profesional, adaptada a tu hogar y tu horario.",
+    "servicesHeading": "Explorar",
+    "contactHeading": "Contacto",
+    "phoneLabel": "Teléfono",
+    "languageLabel": "Idioma",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "close": "Cerrar"
+  }
+}

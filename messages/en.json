@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "ELQ Cleaning LLC — Professional House Cleaning Service",
+    "description": "ELQ Cleaning LLC provides personalized residential cleaning on a weekly, biweekly, or monthly schedule. Call (480) 546-1725 for a free estimate."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "whyElq": "Why ELQ",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getEstimate": "Get a Free Estimate",
+    "callNow": "Call Now",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "badge": "Professional House Cleaning",
+    "titleLine1": "A cleaner home.",
+    "titleLine2": "A calmer life.",
+    "subtitle": "Professional residential cleaning designed around your home, your schedule, and your peace of mind.",
+    "ctaEstimate": "Get a Free Estimate",
+    "ctaCall": "Call (480) 546-1725",
+    "frequencyBadge": "Weekly · Biweekly · Monthly",
+    "imageAlt": "A bright, freshly cleaned living space with soft natural light",
+    "scrollHint": "Scroll"
+  },
+  "trust": {
+    "items": [
+      {
+        "title": "Reliable Service",
+        "description": "Cleanings you can count on, appointment after appointment."
+      },
+      {
+        "title": "Flexible Scheduling",
+        "description": "Weekly, biweekly, or monthly — built around your routine."
+      },
+      {
+        "title": "Attention to Detail",
+        "description": "The small things are handled with the same care as the big ones."
+      },
+      {
+        "title": "Residential Cleaning",
+        "description": "Focused entirely on homes, from single rooms to full properties."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What We Offer",
+    "heading": "Our Cleaning Services",
+    "subheading": "A range of residential cleaning services that can be combined and scheduled to match the way you actually live.",
+    "frequencyNote": "Available weekly, biweekly, or monthly.",
+    "items": [
+      {
+        "title": "Recurring Cleaning",
+        "description": "Ongoing upkeep that keeps every room consistently clean between visits, on a schedule you choose."
+      },
+      {
+        "title": "Deep Cleaning",
+        "description": "A thorough, top-to-bottom clean that reaches the details a routine visit doesn't cover."
+      },
+      {
+        "title": "Move-In / Move-Out Cleaning",
+        "description": "A full reset for an empty home, ready for the next chapter — yours or someone else's."
+      },
+      {
+        "title": "Kitchen Cleaning",
+        "description": "Counters, appliances, cabinets, and floors, cleaned with attention to the surfaces you use every day."
+      },
+      {
+        "title": "Bathroom Cleaning",
+        "description": "A careful, sanitized clean for every fixture and surface, from the mirror to the floor."
+      },
+      {
+        "title": "Bedroom & Living Areas",
+        "description": "Dusting, floors, and tidying that turn shared spaces into rooms you actually enjoy being in."
+      }
+    ]
+  },
+  "whyElq": {
+    "eyebrow": "Why ELQ",
+    "heading": "Why Choose ELQ Cleaning?",
+    "subheading": "ELQ Cleaning is built around one idea: your home deserves a cleaning routine that fits your life, not the other way around.",
+    "points": [
+      {
+        "title": "Personalized cleaning plans",
+        "description": "Every home is different, so every plan is put together around your rooms, your priorities, and your preferences."
+      },
+      {
+        "title": "Flexible scheduling",
+        "description": "Choose weekly, biweekly, or monthly service — and adjust it as your routine changes."
+      },
+      {
+        "title": "Attention to detail",
+        "description": "We treat the details — baseboards, fixtures, edges — as part of the job, not an afterthought."
+      },
+      {
+        "title": "Respect for your home",
+        "description": "We move through your space carefully and thoughtfully, the way we'd want someone to treat ours."
+      },
+      {
+        "title": "Consistent cleaning routines",
+        "description": "The same level of care, visit after visit, so you always know what to expect."
+      }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "The Difference",
+    "heading": "Before & After",
+    "subheading": "Drag the slider to see the kind of transformation a thorough cleaning brings to a room.",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "disclaimer": "Placeholder illustration — will be replaced with real ELQ project photography."
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "heading": "A simple path to a cleaner home",
+    "subheading": "From your first message to a spotless home, the process is designed to be simple and clear.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Request Your Estimate",
+        "description": "Tell us about your home and what you need — it takes just a couple of minutes."
+      },
+      {
+        "number": "02",
+        "title": "Choose Your Schedule",
+        "description": "Pick weekly, biweekly, or monthly service, on the day and time that works for you."
+      },
+      {
+        "number": "03",
+        "title": "We Clean",
+        "description": "Our team takes care of your home with the attention to detail you'd give it yourself."
+      },
+      {
+        "number": "04",
+        "title": "Enjoy Your Home",
+        "description": "Come back to a clean, calm space — and look forward to the next visit."
+      }
+    ]
+  },
+  "frequency": {
+    "eyebrow": "On Your Schedule",
+    "heading": "Weekly. Biweekly. Monthly.",
+    "subheading": "Your routine sets the pace. Choose the frequency that fits your household and change it whenever your life does.",
+    "options": [
+      {
+        "name": "Weekly",
+        "description": "The most consistent option — ideal for busy households that want their home cleaned every week."
+      },
+      {
+        "name": "Biweekly",
+        "description": "A balanced rhythm that keeps things fresh without a visit every single week."
+      },
+      {
+        "name": "Monthly",
+        "description": "A thorough reset once a month, well suited to lighter-traffic homes."
+      }
+    ],
+    "note": "Not sure what fits best? We can help you decide when you request your estimate."
+  },
+  "gallery": {
+    "eyebrow": "A Closer Look",
+    "heading": "The details we care about",
+    "subheading": "A look at the kinds of spaces and details residential cleaning is all about.",
+    "disclaimer": "Placeholder compositions — ready to be replaced with real photography of ELQ's work.",
+    "items": [
+      { "alt": "A clean, organized kitchen counter with natural light" },
+      { "alt": "A tidy bathroom with clean fixtures and folded towels" },
+      { "alt": "A neatly made bed in a calm, organized bedroom" },
+      { "alt": "A bright living room with tidy, dust-free surfaces" },
+      { "alt": "Close-up detail of a clean, polished surface" },
+      { "alt": "An organized closet with folded linens" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client Feedback",
+    "heading": "What Clients Say",
+    "subheading": "We're just getting started collecting reviews — this space is reserved for real feedback from real ELQ clients.",
+    "emptyTitle": "Client reviews are coming soon",
+    "emptyDescription": "As ELQ Cleaning completes more residential projects, verified client testimonials will appear here."
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "heading": "Frequently Asked Questions",
+    "subheading": "Answers to the questions we hear most from homeowners.",
+    "items": [
+      {
+        "question": "What areas do you clean?",
+        "answer": "ELQ Cleaning focuses on residential properties — kitchens, bathrooms, bedrooms, living areas, and other spaces throughout the home. Let us know your home's layout when you request an estimate."
+      },
+      {
+        "question": "How often can I schedule cleaning?",
+        "answer": "You can schedule cleaning weekly, biweekly, or monthly, whichever best matches your household's routine."
+      },
+      {
+        "question": "Do I need to be home?",
+        "answer": "It's entirely up to you. Some clients prefer to be home during the visit, while others arrange access so cleaning can happen while they're out. Let us know your preference when scheduling."
+      },
+      {
+        "question": "Can I request recurring service?",
+        "answer": "Yes. Recurring service on a weekly, biweekly, or monthly basis is one of the most popular ways clients work with ELQ Cleaning."
+      },
+      {
+        "question": "How do I request an estimate?",
+        "answer": "Call (480) 546-1725 or fill out the estimate form on this page with a few details about your home, and we'll follow up with you."
+      },
+      {
+        "question": "What should I do before my cleaning appointment?",
+        "answer": "Tidying away personal items and valuables ahead of time helps our team focus fully on cleaning. If you have specific instructions for a particular room, let us know in advance."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get Started",
+    "heading": "Ready for a cleaner home?",
+    "subheading": "Call now for a quick conversation, or send us a few details and we'll follow up with an estimate.",
+    "callCta": "Call Now",
+    "callSubtext": "Speak with us directly",
+    "formCta": "Request an Estimate",
+    "form": {
+      "heading": "Request an Estimate",
+      "name": "Full Name",
+      "namePlaceholder": "Jane Smith",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(480) 555-0100",
+      "email": "Email Address",
+      "emailPlaceholder": "jane@email.com",
+      "serviceType": "Service Type",
+      "serviceTypePlaceholder": "Select a service",
+      "frequency": "Cleaning Frequency",
+      "frequencyPlaceholder": "Select a frequency",
+      "propertyType": "Property Type",
+      "propertyTypePlaceholder": "Select a property type",
+      "propertyTypeOptions": {
+        "house": "House",
+        "apartment": "Apartment / Condo",
+        "townhome": "Townhome"
+      },
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "preferredDate": "Preferred Date",
+      "message": "Message",
+      "messagePlaceholder": "Tell us a bit about your home and what you're looking for.",
+      "submit": "Send Request",
+      "submitting": "Sending…",
+      "successTitle": "Thank you — request received.",
+      "successMessage": "We've received your details and will follow up with you shortly. If it's urgent, feel free to call (480) 546-1725 directly.",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "We couldn't send your request just now. Please try again, or call (480) 546-1725 directly.",
+      "notConfiguredTitle": "Online requests aren't connected yet",
+      "notConfiguredMessage": "This form isn't wired up to email delivery yet. Please call (480) 546-1725 and we'll be glad to help directly.",
+      "errors": {
+        "required": "This field is required.",
+        "invalidEmail": "Please enter a valid email address.",
+        "invalidPhone": "Please enter a valid phone number."
+      }
+    }
+  },
+  "mobileCta": {
+    "call": "Call",
+    "estimate": "Free Estimate"
+  },
+  "footer": {
+    "description": "Professional residential cleaning, tailored to your home and your schedule.",
+    "servicesHeading": "Explore",
+    "contactHeading": "Contact",
+    "phoneLabel": "Phone",
+    "languageLabel": "Language",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "close": "Close"
+  }
+}

@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090909;
+  --background-secondary: #111111;
+  --surface: #171717;
+  --surface-hover: #1d1b1b;
+  --foreground: #fafafa;
+  --rose: #d7aaa4;
+  --rose-strong: #c99790;
+  --champagne: #e8c9c3;
+  --blush: #f5e7e4;
+  --muted: #adadad;
+  --muted-strong: #cfcfcf;
+  --border: rgba(215, 170, 164, 0.14);
+  --border-strong: rgba(215, 170, 164, 0.28);
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-foreground: var(--foreground);
+  --color-rose: var(--rose);
+  --color-rose-strong: var(--rose-strong);
+  --color-champagne: var(--champagne);
+  --color-blush: var(--blush);
+  --color-muted: var(--muted);
+  --color-muted-strong: var(--muted-strong);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    var(--font-sans),
+    "Noto Sans SC",
+    "Noto Sans Devanagari",
+    -apple-system,
+    system-ui,
+    sans-serif;
+}
+
+.font-heading {
+  font-family:
+    var(--font-heading),
+    "Noto Serif SC",
+    "Noto Serif",
+    Georgia,
+    serif;
+}
+
+::selection {
+  background: var(--rose);
+  color: #090909;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Subtle film-grain texture overlay, purely decorative. */
+.grain-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Gradient text used sparingly for small premium accents. */
+.text-gradient-rose {
+  background: linear-gradient(120deg, var(--champagne), var(--rose) 55%, var(--rose-strong));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container-elq {
+  width: 100%;
+  max-width: 84rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-elq {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-elq {
+    padding-inline: 3rem;
+  }
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
