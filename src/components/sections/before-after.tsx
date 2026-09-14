@@ -13,7 +13,6 @@ export function BeforeAfter() {
 
         <Reveal delay={0.1} className="mx-auto mt-14 max-w-3xl">
           <BeforeAfterSlider beforeLabel={t("beforeLabel")} afterLabel={t("afterLabel")} />
-          <p className="mt-4 text-center text-xs text-muted">{t("disclaimer")}</p>
         </Reveal>
       </div>
     </section>

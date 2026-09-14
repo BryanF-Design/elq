@@ -112,8 +112,7 @@
     "heading": "清洁前后对比",
     "subheading": "拖动滑块，感受一次彻底清洁为房间带来的变化。",
     "beforeLabel": "清洁前",
-    "afterLabel": "清洁后",
-    "disclaimer": "示意图仅供参考，后续将替换为 ELQ 真实项目照片。"
+    "afterLabel": "清洁后"
   },
   "process": {
     "eyebrow": "服务流程",
@@ -166,7 +165,6 @@
     "eyebrow": "细节之处",
     "heading": "我们在意的每一个细节",
     "subheading": "了解住宅清洁所关注的空间与细节。",
-    "disclaimer": "示意构图仅供参考，将替换为 ELQ 实际工作的真实照片。",
     "items": [
       { "alt": "在自然光下整洁有序的厨房台面" },
       { "alt": "洁具干净、毛巾叠放整齐的整洁浴室" },

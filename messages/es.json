@@ -112,8 +112,7 @@
     "heading": "Antes y Después",
     "subheading": "Desliza para ver el tipo de transformación que una limpieza a fondo genera en una habitación.",
     "beforeLabel": "Antes",
-    "afterLabel": "Después",
-    "disclaimer": "Ilustración de referencia — será reemplazada con fotografía real de proyectos de ELQ."
+    "afterLabel": "Después"
   },
   "process": {
     "eyebrow": "Cómo Funciona",
@@ -166,7 +165,6 @@
     "eyebrow": "Una Mirada Más de Cerca",
     "heading": "Los detalles que nos importan",
     "subheading": "Un vistazo a los espacios y detalles de los que trata la limpieza residencial.",
-    "disclaimer": "Composiciones de referencia — listas para ser reemplazadas con fotografía real del trabajo de ELQ.",
     "items": [
       { "alt": "Una encimera de cocina limpia y organizada con luz natural" },
       { "alt": "Un baño ordenado con accesorios limpios y toallas dobladas" },

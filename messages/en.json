@@ -112,8 +112,7 @@
     "heading": "Before & After",
     "subheading": "Drag the slider to see the kind of transformation a thorough cleaning brings to a room.",
     "beforeLabel": "Before",
-    "afterLabel": "After",
-    "disclaimer": "Placeholder illustration — will be replaced with real ELQ project photography."
+    "afterLabel": "After"
   },
   "process": {
     "eyebrow": "How It Works",
@@ -166,7 +165,6 @@
     "eyebrow": "A Closer Look",
     "heading": "The details we care about",
     "subheading": "A look at the kinds of spaces and details residential cleaning is all about.",
-    "disclaimer": "Placeholder compositions — ready to be replaced with real photography of ELQ's work.",
     "items": [
       { "alt": "A clean, organized kitchen counter with natural light" },
       { "alt": "A tidy bathroom with clean fixtures and folded towels" },

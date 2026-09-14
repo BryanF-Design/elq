@@ -37,8 +37,6 @@ export function Gallery() {
             );
           })}
         </div>
-
-        <p className="mt-6 text-xs text-muted">{t("disclaimer")}</p>
       </div>
     </section>
   );
