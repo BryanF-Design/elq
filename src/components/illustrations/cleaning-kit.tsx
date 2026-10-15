@@ -25,7 +25,7 @@ export function SprayBottle({
   height = 150,
   bodyFill,
   liquidFill,
-  labelColor = "#eb337e",
+  labelColor = "#c3867c",
   headColor = "#ffffff",
   flip = false,
 }: SprayBottleProps) {
@@ -37,7 +37,7 @@ export function SprayBottle({
         d={`M${x - 22} ${y - 18} L${x - 22} ${y - 46} Q${x - 22} ${y - 60} ${x - 6} ${y - 60} L${x + 40} ${y - 60} Q${x + 50} ${y - 60} ${x + 50} ${y - 50} L${x + 50} ${y - 43} L${x + 14} ${y - 38} L${x + 14} ${y - 18} Z`}
         fill={headColor}
       />
-      <rect x={x + 44} y={y - 57} width="12" height="11" rx="3" fill="#fbd3e4" />
+      <rect x={x + 44} y={y - 57} width="12" height="11" rx="3" fill="#ebd6d2" />
       <path
         d={`M${x + 14} ${y - 36} Q${x + 32} ${y - 28} ${x + 27} ${y - 10} L${x + 20} ${y - 10} Q${x + 21} ${y - 25} ${x + 10} ${y - 30} Z`}
         fill={headColor}
@@ -106,11 +106,11 @@ export function Glint({ cx, cy, size, fill = "#ffffff", opacity = 1 }: { cx: num
 export function Plant({ x, y, scale = 1, pot = "#ffffff" }: { x: number; y: number; scale?: number; pot?: string }) {
   return (
     <g transform={`translate(${x} ${y}) scale(${scale})`}>
-      <path d="M-4 -40 C-30 -70 -40 -95 -30 -110 C-12 -95 -6 -70 -4 -40Z" fill="#3fae7d" />
-      <path d="M2 -40 C10 -80 30 -100 46 -104 C42 -80 24 -58 2 -40Z" fill="#5cc795" />
-      <path d="M0 -40 C-4 -75 0 -105 10 -125 C20 -100 14 -70 0 -40Z" fill="#47b985" />
-      <path d="M-2 -38 C-28 -50 -48 -48 -58 -40 C-40 -30 -22 -30 -2 -38Z" fill="#5cc795" />
-      <path d="M2 -38 C24 -52 44 -54 56 -48 C42 -34 22 -32 2 -38Z" fill="#3fae7d" />
+      <path d="M-4 -40 C-30 -70 -40 -95 -30 -110 C-12 -95 -6 -70 -4 -40Z" fill="#5e8f71" />
+      <path d="M2 -40 C10 -80 30 -100 46 -104 C42 -80 24 -58 2 -40Z" fill="#79aa8b" />
+      <path d="M0 -40 C-4 -75 0 -105 10 -125 C20 -100 14 -70 0 -40Z" fill="#669a7a" />
+      <path d="M-2 -38 C-28 -50 -48 -48 -58 -40 C-40 -30 -22 -30 -2 -38Z" fill="#79aa8b" />
+      <path d="M2 -38 C24 -52 44 -54 56 -48 C42 -34 22 -32 2 -38Z" fill="#5e8f71" />
       <path d="M-24 -42 H24 L18 0 H-18 Z" fill={pot} />
       <rect x="-26" y="-46" width="52" height="8" rx="4" fill={pot} />
       <rect x="-26" y="-46" width="52" height="8" rx="4" fill="#000000" opacity="0.06" />

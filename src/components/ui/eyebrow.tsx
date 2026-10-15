@@ -16,7 +16,7 @@ export function Eyebrow({
     <span
       className={cn(
         "inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em]",
-        tone === "dark" ? "bg-white/15 text-white ring-1 ring-white/25" : "bg-brand-soft text-brand ring-1 ring-brand/10",
+        tone === "dark" ? "bg-brand-soft text-brand ring-1 ring-brand/25" : "bg-brand-soft/80 text-brand ring-1 ring-brand/20",
         className,
       )}
     >

@@ -65,7 +65,7 @@ photography and AI-generated-looking imagery. Rather than ship placeholder
 JPEGs, every visual — the hero bucket of cleaning supplies, the room
 vignettes used in the gallery/about/process sections, the before/after
 composition, the logo mark — is a hand-built SVG React component in the
-pink ELQ palette (`src/components/illustrations/`: `hero-art.tsx`,
+black & rose-gold ELQ palette (`src/components/illustrations/`: `hero-art.tsx`,
 `scene-art.tsx`, `before-after-art.tsx`, shared pieces in
 `cleaning-kit.tsx`).
 

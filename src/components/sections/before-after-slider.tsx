@@ -80,15 +80,15 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
         <BeforeAfterArt state="before" className="absolute inset-0 h-full w-full" />
       </div>
 
-      <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-navy/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+      <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-black/60 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-foreground backdrop-blur-sm">
         {beforeLabel}
       </span>
-      <span className="pointer-events-none absolute right-4 top-4 rounded-full bg-brand px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-brand">
+      <span className="pointer-events-none absolute right-4 top-4 rounded-full bg-brand px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-on-brand shadow-brand">
         {afterLabel}
       </span>
 
       <div
-        className="absolute inset-y-0 w-1 -translate-x-1/2 bg-white shadow-[0_0_12px_rgba(58,17,32,0.3)]"
+        className="absolute inset-y-0 w-1 -translate-x-1/2 bg-brand shadow-[0_0_12px_rgba(0,0,0,0.3)]"
         style={{ left: `${percentage}%` }}
         aria-hidden="true"
       />
@@ -102,7 +102,7 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
         onPointerDown={startDragging}
         onKeyDown={handleKeyDown}
         style={{ left: `${percentage}%` }}
-        className="absolute top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border-4 border-white bg-brand text-white shadow-brand focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun"
+        className="absolute top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border-4 border-background bg-brand text-on-brand shadow-brand focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun"
       >
         <GripVertical className="h-4 w-4" aria-hidden="true" />
       </div>

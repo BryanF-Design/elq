@@ -23,22 +23,22 @@ export function About() {
               <SceneArt motif="kitchen" label={alts[0]} />
             </div>
             <div className="flex items-end justify-center">
-              <div className="aspect-square w-[88%] overflow-hidden rounded-full border-[6px] border-white shadow-card">
+              <div className="aspect-square w-[88%] overflow-hidden rounded-full border-[6px] border-background shadow-card">
                 <SceneArt motif="bathroom" label={alts[1]} />
               </div>
             </div>
             <div aria-hidden="true" />
-            <div className="-mt-16 aspect-[4/3.6] overflow-hidden rounded-[2rem] border-[6px] border-white shadow-card sm:-mt-20">
+            <div className="-mt-16 aspect-[4/3.6] overflow-hidden rounded-[2rem] border-[6px] border-background shadow-card sm:-mt-20">
               <SceneArt motif="living" label={alts[2]} />
             </div>
           </div>
 
-          <div className="animate-float absolute bottom-4 left-2 flex w-32 flex-col items-center rounded-3xl bg-gradient-to-br from-[#ef5fa2] to-brand-strong px-4 py-4 sm:bottom-6 sm:left-10 sm:w-44 sm:px-5 sm:py-6 text-center text-white shadow-brand">
-            <span className="font-heading text-4xl font-extrabold sm:text-5xl">{t("badgeValue")}</span>
-            <span className="mt-1 text-xs font-medium leading-snug text-white/90 sm:text-sm">{t("badgeLabel")}</span>
+          <div className="animate-float absolute bottom-4 left-2 flex w-32 flex-col items-center rounded-3xl bg-gradient-to-br from-[#ecd3ca] via-brand to-brand-strong px-4 py-4 sm:bottom-6 sm:left-10 sm:w-44 sm:px-5 sm:py-6 text-center text-on-brand shadow-brand">
+            <span className="font-heading text-4xl font-medium sm:text-5xl">{t("badgeValue")}</span>
+            <span className="mt-1 text-xs font-medium leading-snug text-on-brand/75 sm:text-sm">{t("badgeLabel")}</span>
           </div>
           <span className="absolute -left-3 top-10 h-16 w-16 rounded-full border-2 border-dashed border-brand/30" aria-hidden="true" />
-          <span className="absolute -right-2 bottom-24 h-5 w-5 rounded-full bg-sun" aria-hidden="true" />
+          <span className="absolute -right-2 bottom-24 h-5 w-5 rounded-full bg-brand" aria-hidden="true" />
         </Reveal>
 
         {/* copy */}
@@ -47,7 +47,7 @@ export function About() {
             <Eyebrow>{t("eyebrow")}</Eyebrow>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-5 font-heading text-balance text-3xl font-bold leading-[1.12] tracking-tight text-foreground sm:text-4xl lg:text-[2.85rem]">
+            <h2 className="mt-5 font-heading text-balance text-3xl font-semibold leading-[1.12] tracking-tight text-foreground sm:text-4xl lg:text-[2.85rem]">
               {t("heading")}
             </h2>
           </Reveal>
@@ -55,10 +55,10 @@ export function About() {
             <p className="mt-6 text-pretty text-base leading-relaxed text-muted sm:text-lg">{t("body")}</p>
           </Reveal>
 
-          <Reveal delay={0.15} className="mt-9 grid grid-cols-3 divide-x divide-border rounded-3xl bg-white p-2 shadow-soft">
+          <Reveal delay={0.15} className="mt-9 grid grid-cols-3 divide-x divide-border rounded-3xl border border-border bg-surface p-2 shadow-soft">
             {highlights.map((item) => (
               <div key={item.value} className="px-3 py-3 text-center sm:px-4">
-                <p className="font-heading text-lg font-extrabold text-brand sm:text-xl">{item.value}</p>
+                <p className="font-heading text-lg font-medium text-brand sm:text-xl">{item.value}</p>
                 <p className="mt-1 text-xs font-medium text-muted sm:text-sm">{item.label}</p>
               </div>
             ))}
@@ -70,7 +70,7 @@ export function About() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Button>
             <a href={site.phoneHref} className="group flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft text-brand transition-colors group-hover:bg-brand group-hover:text-on-brand">
                 <Phone className="h-5 w-5" aria-hidden="true" />
               </span>
               <span className="leading-tight">

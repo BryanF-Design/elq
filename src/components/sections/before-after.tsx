@@ -16,13 +16,13 @@ export function BeforeAfter() {
           <ul className="mt-8 flex flex-col gap-3">
             {points.map((point, index) => (
               <Reveal as="li" key={point} delay={0.1 + index * 0.06} className="flex items-center gap-3 text-base font-medium text-foreground">
-                <CircleCheck className="h-6 w-6 shrink-0 fill-brand text-white" aria-hidden="true" />
+                <CircleCheck className="h-6 w-6 shrink-0 fill-brand text-on-brand" aria-hidden="true" />
                 {point}
               </Reveal>
             ))}
           </ul>
         </div>
-        <Reveal delay={0.1} className="rounded-[2.25rem] bg-white p-3 shadow-card">
+        <Reveal delay={0.1} className="rounded-[2.25rem] border border-border bg-surface p-3 shadow-card">
           <BeforeAfterSlider beforeLabel={t("beforeLabel")} afterLabel={t("afterLabel")} />
         </Reveal>
       </div>

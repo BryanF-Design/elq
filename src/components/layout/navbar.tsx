@@ -26,7 +26,7 @@ export function Navbar() {
     <>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-on-brand"
       >
         {t("skipToContent")}
       </a>
@@ -36,14 +36,14 @@ export function Navbar() {
           className={cn(
             "mx-auto flex h-16 max-w-[78rem] items-center justify-between gap-4 rounded-full border px-3 pl-4 transition-all duration-500 sm:h-[4.5rem] sm:pl-5",
             scrolled
-              ? "border-white/80 bg-white/85 shadow-[0_18px_50px_-20px_rgba(58,17,32,0.28)] backdrop-blur-xl"
-              : "border-transparent bg-white/40 backdrop-blur-md",
+              ? "border-border bg-background/80 shadow-[0_18px_50px_-20px_rgba(0,0,0,0.28)] backdrop-blur-xl"
+              : "border-transparent bg-transparent",
           )}
         >
           <a href="#home" className="flex shrink-0 items-center gap-2.5">
             <ElqMark />
             <span className="leading-none">
-              <span className="block font-heading text-lg font-extrabold tracking-tight text-foreground">
+              <span className="block font-heading text-lg font-medium tracking-tight text-foreground">
                 ELQ<span className="text-brand"> Cleaning</span>
               </span>
               <span className="mt-0.5 block text-[10px] font-semibold uppercase tracking-[0.22em] text-muted">
@@ -70,7 +70,7 @@ export function Navbar() {
             <a
               href={site.phoneHref}
               aria-label={`${t("callNow")} ${site.phoneDisplay}`}
-              className="flex h-11 items-center gap-2 rounded-full border border-foreground/10 bg-white px-3.5 text-sm font-semibold text-foreground transition-colors hover:border-brand hover:text-brand 2xl:px-4"
+              className="flex h-11 items-center gap-2 rounded-full border border-border-strong bg-transparent px-3.5 text-sm font-semibold text-foreground transition-colors hover:border-brand hover:text-brand 2xl:px-4"
             >
               <Phone className="h-4 w-4 text-brand" aria-hidden="true" />
               <span className="xl:hidden 2xl:inline">{site.phoneDisplay}</span>
@@ -87,7 +87,7 @@ export function Navbar() {
               onClick={() => setMenuOpen(true)}
               aria-label={t("openMenu")}
               aria-expanded={menuOpen}
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white shadow-brand transition-transform hover:scale-105"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-on-brand shadow-brand transition-transform hover:scale-105"
             >
               <Menu className="h-5 w-5" aria-hidden="true" />
             </button>

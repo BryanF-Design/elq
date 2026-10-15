@@ -43,12 +43,12 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: reduceMotion ? 0.01 : 0.25 }}
-          className="fixed inset-0 z-[60] overflow-y-auto bg-gradient-to-b from-white to-brand-soft xl:hidden"
+          className="fixed inset-0 z-[60] overflow-y-auto bg-gradient-to-b from-background to-[#1a1312] xl:hidden"
         >
           <div className="container-elq flex h-20 items-center justify-between">
             <span className="flex items-center gap-2.5">
               <ElqMark />
-              <span className="font-heading text-lg font-extrabold text-foreground">
+              <span className="font-heading text-lg font-medium text-foreground">
                 ELQ<span className="text-brand"> Cleaning</span>
               </span>
             </span>
@@ -56,7 +56,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
               type="button"
               onClick={onClose}
               aria-label={t("closeMenu")}
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-foreground text-white"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-border-strong text-foreground"
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -75,7 +75,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
                 initial={{ opacity: 0, y: reduceMotion ? 0 : 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: reduceMotion ? 0 : 0.05 + index * 0.04, duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 shadow-[0_8px_24px_-16px_rgba(58,17,32,0.25)]"
+                className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-5 py-4 shadow-[0_8px_24px_-16px_rgba(0,0,0,0.25)]"
               >
                 <span className="font-heading text-xl font-semibold text-foreground">{t(item.labelKey)}</span>
                 <ArrowRight className="h-5 w-5 text-brand transition-transform group-hover:translate-x-1" aria-hidden="true" />

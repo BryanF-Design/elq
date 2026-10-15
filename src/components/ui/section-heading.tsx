@@ -36,8 +36,8 @@ export function SectionHeading({
       <Reveal delay={0.05}>
         <h2
           className={cn(
-            "font-heading text-balance text-3xl font-bold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.85rem]",
-            onDark ? "text-white" : "text-foreground",
+            "font-heading text-balance text-3xl font-normal leading-[1.15] sm:text-4xl lg:text-[2.85rem]",
+            "text-foreground",
             headingClassName,
           )}
         >
@@ -49,7 +49,7 @@ export function SectionHeading({
           <p
             className={cn(
               "mt-5 text-pretty text-base leading-relaxed sm:text-lg",
-              onDark ? "text-white/80" : "text-muted",
+              onDark ? "text-muted-strong" : "text-muted",
             )}
           >
             {subheading}

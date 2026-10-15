@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export const inputClassName =
-  "w-full rounded-2xl border border-border-strong bg-background/60 px-4 py-3 text-sm text-foreground placeholder:text-muted/70 transition-all duration-200 hover:border-brand/40 focus:border-brand focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand/10 focus-visible:outline-none aria-[invalid=true]:border-red-400 aria-[invalid=true]:ring-red-100";
+  "w-full rounded-2xl border border-border-strong bg-background/70 px-4 py-3 text-sm text-foreground placeholder:text-muted/70 transition-all duration-200 hover:border-brand/40 focus:border-brand focus:bg-surface-hover focus:outline-none focus:ring-4 focus:ring-brand/10 focus-visible:outline-none aria-[invalid=true]:border-red-400 aria-[invalid=true]:ring-red-400/20";
 
 type FormFieldProps = {
   label: string;
@@ -22,7 +22,7 @@ export function FormField({ label, htmlFor, error, required, className, children
       </label>
       {children}
       {error ? (
-        <p role="alert" className="text-xs font-medium text-red-500">
+        <p role="alert" className="text-xs font-medium text-red-400">
           {error}
         </p>
       ) : null}

@@ -16,7 +16,7 @@ export function BeforeAfterArt({ state, className }: { state: "before" | "after"
           <rect width="400" height="300" fill="#7d6f55" opacity="0.32" />
           <rect width="400" height="300" fill="#3b3a36" opacity="0.12" />
           {/* cobweb */}
-          <g stroke="#f4efe4" strokeWidth="1" opacity="0.7" fill="none">
+          <g stroke="#ece7e2" strokeWidth="1" opacity="0.7" fill="none">
             <path d="M0 0 L60 40 M0 0 L30 60 M0 0 L70 14" />
             <path d="M14 10 Q22 22 10 26 M30 20 Q40 40 18 44 M46 30 Q56 52 26 60" />
           </g>
@@ -42,7 +42,7 @@ export function BeforeAfterArt({ state, className }: { state: "before" | "after"
               cx={(i * 73) % 400}
               cy={(i * 41) % 300}
               r={0.8 + (i % 3) * 0.6}
-              fill="#f2ead8"
+              fill="#e9e1da"
               opacity="0.55"
             />
           ))}

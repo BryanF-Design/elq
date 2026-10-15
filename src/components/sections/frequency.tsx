@@ -15,7 +15,7 @@ export function Frequency() {
 
   return (
     <section id="plans" className="relative overflow-hidden py-20 lg:py-28">
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#fce6f0] to-transparent" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-brand/[0.06] to-transparent" aria-hidden="true" />
       <div className="container-elq relative">
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
           <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} />
@@ -34,25 +34,25 @@ export function Frequency() {
                   className={cn(
                     "relative flex h-full flex-col rounded-[2rem] p-7 transition-transform duration-500 hover:-translate-y-1.5 sm:p-8",
                     featured
-                      ? "bg-gradient-to-b from-[#ee4e97] to-brand-strong text-white shadow-[0_40px_80px_-30px_rgba(235,51,126,0.8)]"
-                      : "border border-white bg-white/90 shadow-card backdrop-blur",
+                      ? "bg-gradient-to-b from-[#ecd3ca] via-brand to-brand-strong text-on-brand shadow-[0_40px_80px_-30px_rgba(215,170,164,0.55)]"
+                      : "border border-border bg-surface/90 shadow-card backdrop-blur",
                   )}
                 >
                   {featured ? (
-                    <span className="absolute -top-4 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full bg-sun px-4 py-1.5 text-xs font-bold text-navy shadow-md">
+                    <span className="absolute -top-4 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full bg-on-brand px-4 py-1.5 text-xs font-bold text-brand shadow-md ring-1 ring-brand/40">
                       <Sparkle className="h-3 w-3" />
                       {t("featured")}
                     </span>
                   ) : null}
 
                   <div className="flex items-center justify-between">
-                    <h3 className={cn("font-heading text-xl font-bold", featured ? "text-white" : "text-foreground")}>
+                    <h3 className={cn("font-heading text-xl font-semibold", featured ? "text-on-brand" : "text-foreground")}>
                       {option.name}
                     </h3>
                     <span
                       className={cn(
                         "flex h-12 w-12 items-center justify-center rounded-2xl",
-                        featured ? "bg-white/15 text-white" : "bg-brand-soft text-brand",
+                        featured ? "bg-on-brand/10 text-on-brand" : "bg-brand-soft text-brand",
                       )}
                     >
                       <Icon className="h-6 w-6" aria-hidden="true" />
@@ -60,18 +60,18 @@ export function Frequency() {
                   </div>
 
                   <p className="mt-5 flex items-baseline gap-2">
-                    <span className={cn("font-heading text-5xl font-extrabold", featured ? "text-white" : "text-brand")}>
+                    <span className={cn("font-heading text-5xl font-medium", featured ? "text-on-brand" : "text-brand")}>
                       {t("priceLabel")}
                     </span>
-                    <span className={cn("text-sm font-medium", featured ? "text-white/75" : "text-muted")}>
+                    <span className={cn("text-sm font-medium", featured ? "text-on-brand/70" : "text-muted")}>
                       {t("priceSuffix")}
                     </span>
                   </p>
-                  <p className={cn("mt-4 text-sm leading-relaxed", featured ? "text-white/85" : "text-muted")}>
+                  <p className={cn("mt-4 text-sm leading-relaxed", featured ? "text-on-brand/80" : "text-muted")}>
                     {option.description}
                   </p>
 
-                  <div className={cn("my-6 h-px", featured ? "bg-white/20" : "bg-border")} aria-hidden="true" />
+                  <div className={cn("my-6 h-px", featured ? "bg-on-brand/15" : "bg-border")} aria-hidden="true" />
 
                   <ul className="flex flex-1 flex-col gap-3.5">
                     {option.features.map((feature) => (
@@ -79,12 +79,12 @@ export function Frequency() {
                         <span
                           className={cn(
                             "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full",
-                            featured ? "bg-sun text-navy" : "bg-brand text-white",
+                            featured ? "bg-on-brand text-brand" : "bg-brand text-on-brand",
                           )}
                         >
                           <Check className="h-3 w-3" strokeWidth={3} aria-hidden="true" />
                         </span>
-                        <span className={featured ? "text-white" : "text-foreground"}>{feature}</span>
+                        <span className={featured ? "text-on-brand" : "text-foreground"}>{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -92,7 +92,7 @@ export function Frequency() {
                   <Button
                     as="a"
                     href="#contact"
-                    variant={featured ? "sun" : "primary"}
+                    variant={featured ? "white" : "primary"}
                     size="md"
                     className="mt-8 w-full"
                   >

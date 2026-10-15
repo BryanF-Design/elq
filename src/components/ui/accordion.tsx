@@ -27,7 +27,7 @@ export function Accordion({ items, className }: { items: AccordionItem[]; classN
           <div
             key={item.question}
             className={cn(
-              "rounded-3xl border bg-white px-5 transition-all duration-300 sm:px-7",
+              "rounded-3xl border bg-surface px-5 transition-all duration-300 sm:px-7",
               isOpen ? "border-brand/30 shadow-soft" : "border-border hover:border-brand/25",
             )}
           >
@@ -46,7 +46,7 @@ export function Accordion({ items, className }: { items: AccordionItem[]; classN
                 <span
                   className={cn(
                     "flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-all duration-300",
-                    isOpen ? "rotate-45 bg-brand text-white" : "bg-brand-soft text-brand",
+                    isOpen ? "rotate-45 bg-brand text-on-brand" : "bg-brand-soft text-brand",
                   )}
                   aria-hidden="true"
                 >

@@ -29,7 +29,7 @@ export function WhyElq() {
                   key={point.title}
                   delay={index * 0.06}
                   className={cn(
-                    "flex gap-4 rounded-3xl border border-border bg-white/80 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-soft",
+                    "flex gap-4 rounded-3xl border border-border bg-surface/80 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-soft",
                     index === points.length - 1 && points.length % 2 === 1 && "sm:col-span-2",
                   )}
                 >
@@ -37,7 +37,7 @@ export function WhyElq() {
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <span>
-                    <span className="block font-heading text-base font-bold text-foreground">{point.title}</span>
+                    <span className="block font-heading text-base font-semibold text-foreground">{point.title}</span>
                     <span className="mt-1 block text-sm leading-relaxed text-muted">{point.description}</span>
                   </span>
                 </Reveal>
@@ -50,11 +50,11 @@ export function WhyElq() {
           <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-card">
             <SceneArt motif="floor" label={galleryItems[1]?.alt} />
           </div>
-          <div className="absolute -bottom-10 -left-6 aspect-square w-[52%] overflow-hidden rounded-[2rem] border-[6px] border-white shadow-card sm:-left-12">
+          <div className="absolute -bottom-10 -left-6 aspect-square w-[52%] overflow-hidden rounded-[2rem] border-[6px] border-background shadow-card sm:-left-12">
             <SceneArt motif="detail" label={galleryItems[4]?.alt} />
           </div>
           <div className="glass animate-float absolute -right-3 top-8 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-right-8">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sun text-navy">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-on-brand">
               <BadgeCheck className="h-5 w-5" aria-hidden="true" />
             </span>
             <span className="leading-tight">

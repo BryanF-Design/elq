@@ -110,8 +110,8 @@ export function EstimateForm() {
         className="flex flex-col items-center gap-3 rounded-3xl bg-brand-soft p-10 text-center"
         role="status"
       >
-        <CheckCircle2 className="h-12 w-12 fill-brand text-white" aria-hidden="true" />
-        <h3 className="font-heading text-xl font-bold text-foreground">{t("successTitle")}</h3>
+        <CheckCircle2 className="h-12 w-12 fill-brand text-on-brand" aria-hidden="true" />
+        <h3 className="font-heading text-xl font-semibold text-foreground">{t("successTitle")}</h3>
         <p className="max-w-sm text-sm leading-relaxed text-muted">{t("successMessage")}</p>
       </motion.div>
     );
@@ -288,12 +288,12 @@ export function EstimateForm() {
       {status === "error" || status === "not_configured" ? (
         <div
           role="alert"
-          className="flex items-start gap-3 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900"
+          className="flex items-start gap-3 rounded-2xl border border-brand/40 bg-brand-soft p-4 text-sm text-foreground"
         >
           <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
           <div>
             <p className="font-semibold">{status === "not_configured" ? t("notConfiguredTitle") : t("errorTitle")}</p>
-            <p className="mt-1 text-amber-900/80">
+            <p className="mt-1 text-muted-strong">
               {status === "not_configured" ? t("notConfiguredMessage") : t("errorMessage")}
             </p>
             <a href={site.phoneHref} className="mt-2 inline-flex items-center gap-1.5 font-semibold text-brand">

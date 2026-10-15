@@ -16,8 +16,8 @@ export function Contact() {
 
       <div className="container-elq relative">
         {/* Clino-style call banner */}
-        <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-gradient-to-r from-brand to-[#ef5fa2] px-7 py-9 text-white shadow-brand sm:px-12 sm:py-11">
-          <svg viewBox="0 0 400 200" className="pointer-events-none absolute left-[38%] -top-8 h-56 w-auto opacity-40" aria-hidden="true">
+        <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-gradient-to-r from-[#e8c9c3] via-brand to-brand-strong px-7 py-9 text-on-brand shadow-brand sm:px-12 sm:py-11">
+          <svg viewBox="0 0 400 200" className="pointer-events-none absolute left-[38%] -top-8 h-56 w-auto opacity-50" aria-hidden="true">
             <defs>
               <radialGradient id="contact-bubble" cx="0.35" cy="0.3" r="0.75">
                 <stop offset="0" stopColor="#ffffff" stopOpacity="0.8" />
@@ -30,16 +30,16 @@ export function Contact() {
           </svg>
           <div className="relative flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
             <div>
-              <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t("bannerTitle")}</h2>
-              <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/85 sm:text-base">{t("bannerText")}</p>
+              <h2 className="font-heading text-2xl font-semibold sm:text-3xl">{t("bannerTitle")}</h2>
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-on-brand/75 sm:text-base">{t("bannerText")}</p>
             </div>
             <a href={site.phoneHref} className="group flex shrink-0 items-center gap-4">
-              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-brand shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:rotate-12">
+              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-on-brand text-brand shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:rotate-12">
                 <Phone className="h-6 w-6" aria-hidden="true" />
               </span>
               <span className="leading-tight">
-                <span className="block text-sm text-white/80">{t("callSubtext")}</span>
-                <span className="block font-heading text-2xl font-bold">{site.phoneDisplay}</span>
+                <span className="block text-sm text-on-brand/70">{t("callSubtext")}</span>
+                <span className="block text-2xl font-bold">{site.phoneDisplay}</span>
               </span>
             </a>
           </div>
@@ -51,7 +51,7 @@ export function Contact() {
             <ul className="mt-8 flex flex-col gap-3.5">
               {perks.map((perk, index) => (
                 <Reveal as="li" key={perk} delay={0.1 + index * 0.06} className="flex items-center gap-3 font-medium text-foreground">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-white">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-on-brand">
                     <Check className="h-4 w-4" strokeWidth={3} aria-hidden="true" />
                   </span>
                   {perk}
@@ -60,8 +60,8 @@ export function Contact() {
             </ul>
           </div>
 
-          <Reveal delay={0.1} className="rounded-[2.25rem] border border-white bg-white/90 p-6 shadow-card backdrop-blur sm:p-10">
-            <h3 className="font-heading text-2xl font-bold text-foreground">{t("form.heading")}</h3>
+          <Reveal delay={0.1} className="rounded-[2.25rem] border border-border bg-surface/90 p-6 shadow-card backdrop-blur sm:p-10">
+            <h3 className="font-heading text-2xl font-semibold text-foreground">{t("form.heading")}</h3>
             <p className="mt-1 text-sm text-muted">{t("form.subheading")}</p>
             <div className="mt-7">
               <EstimateForm />

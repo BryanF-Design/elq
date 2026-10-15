@@ -41,7 +41,7 @@ export function LanguageSelector({
       aria-label={t("language")}
       className={cn(
         "relative inline-flex items-center rounded-full p-1",
-        onDark ? "bg-white/10 ring-1 ring-white/20" : "bg-brand-soft ring-1 ring-brand/10",
+        onDark ? "bg-background/40 ring-1 ring-border-strong" : "bg-surface/70 ring-1 ring-border-strong",
         isPending && "opacity-70",
         className,
       )}
@@ -61,10 +61,10 @@ export function LanguageSelector({
               "relative z-10 min-w-10 rounded-full px-2.5 py-1.5 text-xs font-bold transition-colors duration-300",
               active
                 ? onDark
-                  ? "text-brand"
-                  : "text-white"
+                  ? "text-on-brand"
+                  : "text-on-brand"
                 : onDark
-                  ? "text-white/80 hover:text-white"
+                  ? "text-muted-strong hover:text-brand"
                   : "text-muted-strong hover:text-brand",
             )}
           >
@@ -74,7 +74,7 @@ export function LanguageSelector({
                 transition={reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 420, damping: 34 }}
                 className={cn(
                   "absolute inset-0 -z-10 rounded-full",
-                  onDark ? "bg-white" : "bg-brand shadow-[0_6px_16px_-6px_rgba(235,51,126,0.8)]",
+                  onDark ? "bg-brand" : "bg-brand shadow-[0_6px_16px_-6px_rgba(215,170,164,0.8)]",
                 )}
               />
             ) : null}

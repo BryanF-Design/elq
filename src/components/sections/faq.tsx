@@ -16,17 +16,17 @@ export function Faq() {
         <div>
           <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} subheading={t("subheading")} />
 
-          <Reveal delay={0.15} className="relative mt-10 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#ee4e97] to-brand-strong p-7 text-white shadow-brand">
-            <div className="absolute -right-12 -top-12 h-36 w-36 overflow-hidden rounded-full border-4 border-white/30 opacity-90">
+          <Reveal delay={0.15} className="relative mt-10 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#e8c9c3] via-brand to-brand-strong p-7 text-on-brand shadow-brand">
+            <div className="absolute -right-12 -top-12 h-36 w-36 overflow-hidden rounded-full border-4 border-on-brand/20 opacity-90">
               <SceneArt motif="estimate" />
             </div>
-            <p className="relative max-w-[65%] font-heading text-2xl font-bold">{t("cardTitle")}</p>
-            <p className="relative mt-3 max-w-[65%] text-sm leading-relaxed text-white/85">{t("cardText")}</p>
+            <p className="relative max-w-[65%] font-heading text-2xl font-semibold">{t("cardTitle")}</p>
+            <p className="relative mt-3 max-w-[65%] text-sm leading-relaxed text-on-brand/75">{t("cardText")}</p>
             <a
               href={site.phoneHref}
-              className="relative mt-6 inline-flex items-center gap-3 rounded-full bg-white py-2 pl-2 pr-6 font-semibold text-brand transition-transform hover:-translate-y-0.5"
+              className="relative mt-6 inline-flex items-center gap-3 rounded-full bg-on-brand py-2 pl-2 pr-6 font-semibold text-brand transition-transform hover:-translate-y-0.5"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-sun text-navy">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-on-brand">
                 <Phone className="h-4 w-4" aria-hidden="true" />
               </span>
               {site.phoneDisplay}

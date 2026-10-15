@@ -19,12 +19,12 @@ export function TrustBar() {
               <motion.div
                 key={item.title}
                 variants={staggerItemVariants}
-                className="glass group grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-1 rounded-3xl p-5 sm:flex sm:flex-col sm:gap-3 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white sm:p-7"
+                className="glass group grid grid-cols-[auto_1fr] items-start gap-x-4 gap-y-1 rounded-3xl p-5 sm:flex sm:flex-col sm:gap-3 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 sm:p-7"
               >
-                <span className="row-span-2 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white">
+                <span className="row-span-2 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-on-brand">
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </span>
-                <h3 className="font-heading text-lg font-bold text-foreground">{item.title}</h3>
+                <h3 className="font-heading text-lg font-semibold text-foreground">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-muted">{item.description}</p>
               </motion.div>
             );
