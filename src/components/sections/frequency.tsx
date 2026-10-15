@@ -5,6 +5,7 @@ import { Sparkle } from "@/components/illustrations/sparkle";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
+import { SwipeHint } from "@/components/ui/swipe-hint";
 import { cn } from "@/lib/utils";
 
 type Option = { name: string; description: string; features: string[] };
@@ -24,12 +25,12 @@ export function Frequency() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid items-stretch gap-6 md:grid-cols-3">
+        <div className="-mx-5 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pt-6 pb-4 [scrollbar-width:none] sm:-mx-8 sm:scroll-px-8 sm:px-8 md:mx-0 md:mt-14 md:grid md:snap-none md:grid-cols-3 md:items-stretch md:gap-6 md:overflow-visible md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden">
           {options.map((option, index) => {
             const Icon = frequencyIcons[index];
             const featured = index === featuredFrequencyIndex;
             return (
-              <Reveal key={option.name} delay={index * 0.08} className={cn(featured && "md:-mt-4 md:mb-4")}>
+              <Reveal key={option.name} delay={index * 0.08} className={cn("w-[84%] shrink-0 snap-start sm:w-[60%] md:w-auto", featured && "md:-mt-4 md:mb-4")}>
                 <article
                   className={cn(
                     "relative flex h-full flex-col rounded-[2rem] p-7 transition-transform duration-500 hover:-translate-y-1.5 sm:p-8",
@@ -105,8 +106,10 @@ export function Frequency() {
           })}
         </div>
 
+        <SwipeHint className="sm:flex md:hidden" />
+
         <Reveal delay={0.2}>
-          <p className="mx-auto mt-12 max-w-xl text-center text-sm text-muted">{t("note")}</p>
+          <p className="mx-auto mt-8 md:mt-12 max-w-xl text-center text-sm text-muted">{t("note")}</p>
         </Reveal>
       </div>
     </section>

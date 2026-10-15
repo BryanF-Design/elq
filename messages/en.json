@@ -380,6 +380,7 @@
     "rights": "All rights reserved."
   },
   "common": {
-    "close": "Close"
+    "close": "Close",
+    "swipe": "Swipe to see more"
   }
 }

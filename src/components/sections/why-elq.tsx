@@ -50,10 +50,10 @@ export function WhyElq() {
           <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-card">
             <SceneArt motif="floor" label={galleryItems[1]?.alt} />
           </div>
-          <div className="absolute -bottom-10 -left-6 aspect-square w-[52%] overflow-hidden rounded-[2rem] border-[6px] border-background shadow-card sm:-left-12">
+          <div className="absolute -bottom-8 -left-2 aspect-square w-[48%] overflow-hidden rounded-[2rem] border-[6px] border-background shadow-card sm:-bottom-10 sm:-left-12">
             <SceneArt motif="detail" label={galleryItems[4]?.alt} />
           </div>
-          <div className="glass animate-float absolute -right-3 top-8 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-right-8">
+          <div className="glass animate-float absolute right-3 top-6 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-right-8 sm:top-8">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-on-brand">
               <BadgeCheck className="h-5 w-5" aria-hidden="true" />
             </span>

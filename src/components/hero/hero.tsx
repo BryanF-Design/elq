@@ -128,10 +128,10 @@ export function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-10 grid max-w-md grid-cols-2 gap-3 sm:gap-4"
           >
             {stats.map((stat) => (
-              <div key={stat.label} className="glass relative min-w-36 overflow-hidden rounded-2xl px-5 py-4">
+              <div key={stat.label} className="glass relative overflow-hidden rounded-2xl px-5 py-4">
                 <span
                   className="pointer-events-none absolute -right-1 -top-4 font-heading text-7xl font-medium text-brand/[0.07]"
                   aria-hidden="true"
@@ -167,7 +167,7 @@ export function Hero() {
             <HeroArt className="relative h-auto w-full drop-shadow-[0_30px_40px_rgba(0,0,0,0.18)]" label={t("imageAlt")} />
           </div>
 
-          <div className="glass animate-float absolute -top-2 left-0 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-left-4">
+          <div className="glass animate-float absolute -top-2 left-0 hidden sm:flex items-center gap-3 rounded-2xl px-4 py-3 sm:-left-4">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-on-brand">
               <CalendarCheck className="h-5 w-5" aria-hidden="true" />
             </span>
@@ -179,7 +179,7 @@ export function Hero() {
             </span>
           </div>
 
-          <div className="glass animate-float-slow absolute bottom-[6%] right-0 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-right-2 lg:bottom-[10%]">
+          <div className="glass animate-float-slow absolute bottom-[4%] right-0 flex items-center gap-3 rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3 sm:-right-2 lg:bottom-[10%]">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-surface text-brand ring-1 ring-brand/40">
               <BadgeCheck className="h-5 w-5" aria-hidden="true" />
             </span>

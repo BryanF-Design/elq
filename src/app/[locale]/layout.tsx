@@ -113,8 +113,10 @@ export default async function LocaleLayout({
         />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          <div className="flex-1 pb-20 lg:pb-0">{children}</div>
-          <Footer />
+          <div className="flex-1">{children}</div>
+          <div className="pb-[calc(4.75rem+env(safe-area-inset-bottom))] lg:pb-0">
+            <Footer />
+          </div>
           <MobileCtaBar />
         </NextIntlClientProvider>
       </body>

@@ -15,30 +15,27 @@ export function About() {
 
   return (
     <section id="about" className="relative py-20 lg:py-28">
-      <div className="container-elq grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
+      <div className="container-elq grid items-center gap-20 lg:grid-cols-2 lg:gap-24">
         {/* collage */}
         <Reveal direction="right" className="relative mx-auto w-full max-w-xl">
-          <div className="grid grid-cols-[1.15fr_1fr] gap-4">
-            <div className="aspect-[4/3.4] overflow-hidden rounded-[2rem] shadow-card">
+          <div className="grid grid-cols-[1.1fr_1fr] gap-3 sm:gap-4">
+            <div className="row-span-2 overflow-hidden rounded-[1.75rem] shadow-card sm:rounded-[2rem]">
               <SceneArt motif="kitchen" label={alts[0]} />
             </div>
-            <div className="flex items-end justify-center">
-              <div className="aspect-square w-[88%] overflow-hidden rounded-full border-[6px] border-background shadow-card">
-                <SceneArt motif="bathroom" label={alts[1]} />
-              </div>
+            <div className="aspect-square overflow-hidden rounded-full border border-border shadow-card">
+              <SceneArt motif="bathroom" label={alts[1]} />
             </div>
-            <div aria-hidden="true" />
-            <div className="-mt-16 aspect-[4/3.6] overflow-hidden rounded-[2rem] border-[6px] border-background shadow-card sm:-mt-20">
+            <div className="aspect-[4/3.4] overflow-hidden rounded-[1.75rem] shadow-card sm:rounded-[2rem]">
               <SceneArt motif="living" label={alts[2]} />
             </div>
           </div>
 
-          <div className="animate-float absolute bottom-4 left-2 flex w-32 flex-col items-center rounded-3xl bg-gradient-to-br from-[#ecd3ca] via-brand to-brand-strong px-4 py-4 sm:bottom-6 sm:left-10 sm:w-44 sm:px-5 sm:py-6 text-center text-on-brand shadow-brand">
-            <span className="font-heading text-4xl font-medium sm:text-5xl">{t("badgeValue")}</span>
-            <span className="mt-1 text-xs font-medium leading-snug text-on-brand/75 sm:text-sm">{t("badgeLabel")}</span>
+          <div className="animate-float absolute -bottom-7 left-4 flex items-center gap-3 rounded-2xl bg-gradient-to-br from-[#ecd3ca] via-brand to-brand-strong py-3 pl-4 pr-5 text-on-brand shadow-brand sm:left-8">
+            <span className="font-heading text-4xl font-medium leading-none sm:text-5xl">{t("badgeValue")}</span>
+            <span className="max-w-[7.5rem] text-xs font-semibold leading-snug sm:text-sm">{t("badgeLabel")}</span>
           </div>
-          <span className="absolute -left-3 top-10 h-16 w-16 rounded-full border-2 border-dashed border-brand/30" aria-hidden="true" />
-          <span className="absolute -right-2 bottom-24 h-5 w-5 rounded-full bg-brand" aria-hidden="true" />
+          <span className="absolute -left-4 -top-4 hidden h-16 w-16 rounded-full border-2 border-dashed border-brand/30 sm:block" aria-hidden="true" />
+          <span className="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-brand" aria-hidden="true" />
         </Reveal>
 
         {/* copy */}
@@ -47,7 +44,7 @@ export function About() {
             <Eyebrow>{t("eyebrow")}</Eyebrow>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-5 font-heading text-balance text-3xl font-semibold leading-[1.12] tracking-tight text-foreground sm:text-4xl lg:text-[2.85rem]">
+            <h2 className="mt-5 font-heading text-balance text-3xl font-normal leading-[1.15] text-foreground sm:text-4xl lg:text-[2.85rem]">
               {t("heading")}
             </h2>
           </Reveal>

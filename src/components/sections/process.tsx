@@ -4,6 +4,8 @@ import { SceneArt } from "@/components/illustrations/scene-art";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { Wave } from "@/components/ui/wave";
+import { SwipeHint, carouselRow, carouselItem } from "@/components/ui/swipe-hint";
+import { cn } from "@/lib/utils";
 
 type Step = { number: string; title: string; description: string };
 
@@ -29,9 +31,9 @@ export function Process() {
             className="max-w-3xl"
           />
 
-          <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className={cn("mt-12 sm:mt-14", carouselRow, "sm:grid-cols-2 sm:gap-6 lg:grid-cols-4")}>
             {steps.map((step, index) => (
-              <Reveal as="li" key={step.number} delay={index * 0.08}>
+              <Reveal as="li" key={step.number} delay={index * 0.08} className={carouselItem}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-border bg-surface p-3 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.9)] transition-transform duration-500 hover:-translate-y-2">
                   <div className="flex items-center justify-between px-3 pt-2 pb-3">
                     <span className="font-heading text-3xl font-medium text-gradient-brand">{step.number}</span>
@@ -56,6 +58,7 @@ export function Process() {
               </Reveal>
             ))}
           </ol>
+          <SwipeHint />
         </div>
       </div>
       <Wave className="text-background-secondary" flip />

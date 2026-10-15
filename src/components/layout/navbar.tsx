@@ -34,10 +34,10 @@ export function Navbar() {
         <nav
           aria-label="Primary"
           className={cn(
-            "mx-auto flex h-16 max-w-[78rem] items-center justify-between gap-4 rounded-full border px-3 pl-4 transition-all duration-500 sm:h-[4.5rem] sm:pl-5",
+            "mx-auto flex h-16 max-w-[78rem] items-center justify-between gap-2 rounded-full sm:gap-4 border px-3 pl-4 transition-all duration-500 sm:h-[4.5rem] sm:pl-5",
             scrolled
-              ? "border-border bg-background/80 shadow-[0_18px_50px_-20px_rgba(0,0,0,0.28)] backdrop-blur-xl"
-              : "border-transparent bg-transparent",
+              ? "border-border bg-[#0d0b0b]/95 shadow-[0_18px_50px_-20px_rgba(0,0,0,0.8)] backdrop-blur-xl"
+              : "border-transparent bg-[#0d0b0b]/60 backdrop-blur-md xl:bg-transparent xl:backdrop-blur-none",
           )}
         >
           <a href="#home" className="flex shrink-0 items-center gap-2.5">
@@ -52,12 +52,12 @@ export function Navbar() {
             </span>
           </a>
 
-          <ul className="hidden items-center gap-1 xl:flex">
-            {navItems.map((item) => (
+          <ul className="hidden items-center gap-1.5 xl:flex">
+            {navItems.filter((item) => item.labelKey !== "home").map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="rounded-full px-3.5 py-2 text-sm font-medium text-muted-strong transition-colors duration-300 hover:bg-brand-soft hover:text-brand"
+                  className="rounded-full px-4 py-2 text-sm font-medium text-muted-strong transition-colors duration-300 hover:bg-brand-soft hover:text-brand"
                 >
                   {t(item.labelKey)}
                 </a>
@@ -81,7 +81,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-2 xl:hidden">
-            <LanguageSelector className="hidden sm:inline-flex lg:hidden" />
+            <LanguageSelector size="sm" className="lg:hidden" />
             <button
               type="button"
               onClick={() => setMenuOpen(true)}

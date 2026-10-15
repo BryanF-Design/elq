@@ -14,9 +14,11 @@ import { usePrefersReducedMotion } from "@/hooks/use-reduced-motion";
  */
 export function LanguageSelector({
   variant = "light",
+  size = "md",
   className,
 }: {
   variant?: "light" | "dark";
+  size?: "sm" | "md";
   className?: string;
 }) {
   const locale = useLocale() as Locale;
@@ -58,7 +60,8 @@ export function LanguageSelector({
             aria-label={localeNames[l]}
             title={localeNames[l]}
             className={cn(
-              "relative z-10 min-w-10 rounded-full px-2.5 py-1.5 text-xs font-bold transition-colors duration-300",
+              "relative z-10 rounded-full font-bold transition-colors duration-300",
+              size === "sm" ? "min-w-8 px-2 py-1.5 text-[11px]" : "min-w-10 px-2.5 py-1.5 text-xs",
               active
                 ? onDark
                   ? "text-on-brand"

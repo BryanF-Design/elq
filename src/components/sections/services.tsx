@@ -3,6 +3,8 @@ import { ArrowUpRight, CalendarCheck } from "lucide-react";
 import { serviceIcons } from "@/data/services";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
+import { SwipeHint, carouselRow, carouselItem } from "@/components/ui/swipe-hint";
+import { cn } from "@/lib/utils";
 
 export function Services() {
   const t = useTranslations("services");
@@ -22,11 +24,11 @@ export function Services() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={cn("mt-12 sm:mt-14", carouselRow, "sm:grid-cols-2 sm:gap-6 lg:grid-cols-3")}>
           {items.map((item, index) => {
             const Icon = serviceIcons[index];
             return (
-              <Reveal key={item.title} delay={(index % 3) * 0.07}>
+              <Reveal key={item.title} delay={(index % 3) * 0.07} className={carouselItem}>
                 <a
                   href="#contact"
                   className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-border bg-surface p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-transparent hover:bg-gradient-to-br hover:from-[#e8c9c3] hover:via-brand hover:to-brand-strong hover:shadow-brand sm:p-8"
@@ -56,6 +58,7 @@ export function Services() {
             );
           })}
         </div>
+        <SwipeHint />
       </div>
     </section>
   );

@@ -1,22 +1,27 @@
 import { cn } from "@/lib/utils";
 
-// A smooth sine edge: 18 crests of 80px each across the 1440px viewBox.
-const WAVE_PATH = `M0 32${"q20-26 40 0t40 0".repeat(18)}V64H0Z`;
+// One 80×24 crest, tiled horizontally so the scallops keep the same shape on
+// every screen width instead of stretching.
+const CREST =
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 24' preserveAspectRatio='none'><path d='M0 12 Q20 0 40 12 T80 12 V24 H0 Z' fill='black'/></svg>";
 
 /**
- * Scalloped wave edge used to transition into and out of the blue bands.
+ * Scalloped wave edge used to transition into and out of the bands.
  * Paint it with `text-*` — it fills with `currentColor`.
  */
 export function Wave({ className, flip = false }: { className?: string; flip?: boolean }) {
   return (
-    <svg
-      viewBox="0 0 1440 64"
-      preserveAspectRatio="none"
+    <div
       aria-hidden="true"
-      className={cn("block h-8 w-full sm:h-12", flip ? "-mt-px rotate-180" : "-mb-px", className)}
-      fill="currentColor"
-    >
-      <path d={WAVE_PATH} />
-    </svg>
+      className={cn("block h-5 w-full bg-current sm:h-6", flip ? "-mt-px rotate-180" : "-mb-px", className)}
+      style={{
+        maskImage: `url("${CREST}")`,
+        WebkitMaskImage: `url("${CREST}")`,
+        maskSize: "64px 100%",
+        WebkitMaskSize: "64px 100%",
+        maskRepeat: "repeat-x",
+        WebkitMaskRepeat: "repeat-x",
+      }}
+    />
   );
 }
