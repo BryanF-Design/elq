@@ -32,11 +32,11 @@ export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-28 pb-28 sm:pt-32 lg:pt-36 lg:pb-36">
       {/* atmosphere */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#e4efff] via-[#eef5ff] to-background" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#fde6f1] via-[#fdf0f6] to-background" aria-hidden="true" />
       <div className="dot-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_30%_30%,black,transparent_70%)]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-white blur-[90px]" aria-hidden="true" />
       <div className="pointer-events-none absolute -right-20 top-10 h-[28rem] w-[28rem] rounded-full bg-sky/70 blur-[110px]" aria-hidden="true" />
-      <span className="animate-float-slow pointer-events-none absolute left-[46%] top-32 hidden h-14 w-14 rounded-full border border-white bg-white/40 shadow-[inset_-6px_-8px_16px_rgba(31,107,255,0.15)] backdrop-blur lg:block" aria-hidden="true" />
+      <span className="animate-float-slow pointer-events-none absolute left-[46%] top-32 hidden h-14 w-14 rounded-full border border-white bg-white/40 shadow-[inset_-6px_-8px_16px_rgba(235,51,126,0.15)] backdrop-blur lg:block" aria-hidden="true" />
       <span className="animate-float pointer-events-none absolute left-[8%] top-[18%] hidden text-brand/40 sm:block" aria-hidden="true">
         <Sparkle className="h-6 w-6" />
       </span>
@@ -155,7 +155,7 @@ export function Hero() {
           className="relative mx-auto w-full max-w-[34rem] lg:max-w-none"
         >
           <div
-            className="absolute inset-x-[4%] bottom-[2%] top-[38%] rounded-[3rem] rounded-tl-[9rem] bg-gradient-to-br from-[#d7e7ff] via-[#b4d1ff] to-[#7fb0ff] shadow-[0_40px_80px_-30px_rgba(31,107,255,0.55)] ring-1 ring-white/70"
+            className="absolute inset-x-[4%] bottom-[2%] top-[38%] rounded-[3rem] rounded-tl-[9rem] bg-gradient-to-br from-[#fbdbea] via-[#f8bbd7] to-[#f38bba] shadow-[0_40px_80px_-30px_rgba(235,51,126,0.55)] ring-1 ring-white/70"
             aria-hidden="true"
           >
             <div className="absolute inset-0 rounded-[inherit] bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.7),transparent_50%)]" />
@@ -164,7 +164,7 @@ export function Hero() {
             </svg>
           </div>
           <div className={reduceMotion ? "relative" : "animate-float-slow relative"}>
-            <HeroArt className="relative h-auto w-full drop-shadow-[0_30px_40px_rgba(13,27,62,0.18)]" label={t("imageAlt")} />
+            <HeroArt className="relative h-auto w-full drop-shadow-[0_30px_40px_rgba(58,17,32,0.18)]" label={t("imageAlt")} />
           </div>
 
           <div className="glass animate-float absolute -top-2 left-0 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-left-4">

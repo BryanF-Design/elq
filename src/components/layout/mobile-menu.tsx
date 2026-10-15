@@ -75,7 +75,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
                 initial={{ opacity: 0, y: reduceMotion ? 0 : 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: reduceMotion ? 0 : 0.05 + index * 0.04, duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 shadow-[0_8px_24px_-16px_rgba(13,27,62,0.25)]"
+                className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 shadow-[0_8px_24px_-16px_rgba(58,17,32,0.25)]"
               >
                 <span className="font-heading text-xl font-semibold text-foreground">{t(item.labelKey)}</span>
                 <ArrowRight className="h-5 w-5 text-brand transition-transform group-hover:translate-x-1" aria-hidden="true" />

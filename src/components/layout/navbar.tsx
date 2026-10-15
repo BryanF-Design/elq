@@ -36,7 +36,7 @@ export function Navbar() {
           className={cn(
             "mx-auto flex h-16 max-w-[78rem] items-center justify-between gap-4 rounded-full border px-3 pl-4 transition-all duration-500 sm:h-[4.5rem] sm:pl-5",
             scrolled
-              ? "border-white/80 bg-white/85 shadow-[0_18px_50px_-20px_rgba(13,27,62,0.28)] backdrop-blur-xl"
+              ? "border-white/80 bg-white/85 shadow-[0_18px_50px_-20px_rgba(58,17,32,0.28)] backdrop-blur-xl"
               : "border-transparent bg-white/40 backdrop-blur-md",
           )}
         >

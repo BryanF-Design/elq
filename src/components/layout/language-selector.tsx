@@ -74,7 +74,7 @@ export function LanguageSelector({
                 transition={reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 420, damping: 34 }}
                 className={cn(
                   "absolute inset-0 -z-10 rounded-full",
-                  onDark ? "bg-white" : "bg-brand shadow-[0_6px_16px_-6px_rgba(31,107,255,0.8)]",
+                  onDark ? "bg-white" : "bg-brand shadow-[0_6px_16px_-6px_rgba(235,51,126,0.8)]",
                 )}
               />
             ) : null}

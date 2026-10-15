@@ -33,7 +33,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="animate-float absolute bottom-4 left-2 flex w-32 flex-col items-center rounded-3xl bg-gradient-to-br from-[#4f95ff] to-brand-strong px-4 py-4 sm:bottom-6 sm:left-10 sm:w-44 sm:px-5 sm:py-6 text-center text-white shadow-brand">
+          <div className="animate-float absolute bottom-4 left-2 flex w-32 flex-col items-center rounded-3xl bg-gradient-to-br from-[#ef5fa2] to-brand-strong px-4 py-4 sm:bottom-6 sm:left-10 sm:w-44 sm:px-5 sm:py-6 text-center text-white shadow-brand">
             <span className="font-heading text-4xl font-extrabold sm:text-5xl">{t("badgeValue")}</span>
             <span className="mt-1 text-xs font-medium leading-snug text-white/90 sm:text-sm">{t("badgeLabel")}</span>
           </div>

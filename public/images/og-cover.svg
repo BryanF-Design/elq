@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4f8ff" />
-      <stop offset="1" stop-color="#cfe0ff" />
+      <stop offset="0" stop-color="#fef5f9" />
+      <stop offset="1" stop-color="#fbd3e4" />
     </linearGradient>
     <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4f95ff" />
-      <stop offset="1" stop-color="#1554d6" />
+      <stop offset="0" stop-color="#ef5fa2" />
+      <stop offset="1" stop-color="#c52665" />
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="1010" cy="300" r="250" fill="url(#blue)" opacity="0.95" />
   <circle cx="900" cy="140" r="40" fill="#ffffff" opacity="0.55" />
   <circle cx="1120" cy="520" r="26" fill="#ffffff" opacity="0.55" />
-  <path d="M930 300 L1010 236 L1090 300 M950 288 V380 H1070 V288" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M930 300 L1010 236 L1090 300 M950 288 V380 H1070 V288" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
   <path d="M1010 300c2.4 20 10 28 28 31-18 3-25.6 11-28 31-2.4-20-10-28-28-31 18-3 25.6-11 28-31Z" fill="#ffd23f" />
-  <rect x="80" y="150" width="190" height="44" rx="22" fill="#e4eeff" />
-  <text x="104" y="180" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2" fill="#1f6bff">ELQ CLEANING LLC</text>
-  <text x="80" y="290" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#0d1b3e">Professional House</text>
-  <text x="80" y="370" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#1f6bff">Cleaning Service</text>
-  <text x="80" y="440" font-family="Arial, sans-serif" font-size="28" fill="#5b6886">Weekly · Biweekly · Monthly — EN · ES · 中文</text>
+  <rect x="80" y="150" width="190" height="44" rx="22" fill="#fde6f0" />
+  <text x="104" y="180" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2" fill="#eb337e">ELQ CLEANING LLC</text>
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#3a1120">Professional House</text>
+  <text x="80" y="370" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#eb337e">Cleaning Service</text>
+  <text x="80" y="440" font-family="Arial, sans-serif" font-size="28" fill="#825f6c">Weekly · Biweekly · Monthly — EN · ES · 中文</text>
   <rect x="80" y="490" width="300" height="64" rx="32" fill="#ffd23f" />
-  <text x="116" y="532" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0a1633">(480) 546-1725</text>
+  <text x="116" y="532" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#2f0e1a">(480) 546-1725</text>
 </svg>

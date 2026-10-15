@@ -25,7 +25,7 @@ export function SprayBottle({
   height = 150,
   bodyFill,
   liquidFill,
-  labelColor = "#1f6bff",
+  labelColor = "#eb337e",
   headColor = "#ffffff",
   flip = false,
 }: SprayBottleProps) {
@@ -37,14 +37,14 @@ export function SprayBottle({
         d={`M${x - 22} ${y - 18} L${x - 22} ${y - 46} Q${x - 22} ${y - 60} ${x - 6} ${y - 60} L${x + 40} ${y - 60} Q${x + 50} ${y - 60} ${x + 50} ${y - 50} L${x + 50} ${y - 43} L${x + 14} ${y - 38} L${x + 14} ${y - 18} Z`}
         fill={headColor}
       />
-      <rect x={x + 44} y={y - 57} width="12" height="11" rx="3" fill="#cfe0ff" />
+      <rect x={x + 44} y={y - 57} width="12" height="11" rx="3" fill="#fbd3e4" />
       <path
         d={`M${x + 14} ${y - 36} Q${x + 32} ${y - 28} ${x + 27} ${y - 10} L${x + 20} ${y - 10} Q${x + 21} ${y - 25} ${x + 10} ${y - 30} Z`}
         fill={headColor}
         opacity="0.9"
       />
       <rect x={x - 15} y={y - 22} width="30" height="24" rx="5" fill={headColor} />
-      <rect x={x - 15} y={y - 6} width="30" height="5" fill="#000" opacity="0.08" />
+      <rect x={x - 15} y={y - 6} width="30" height="5" fill="#000000" opacity="0.08" />
       {/* body */}
       <path
         d={`M${x - half + 6} ${y + 14} Q${x - half} ${y + 18} ${x - half} ${y + 32} L${x - half} ${y + height - 14} Q${x - half} ${y + height} ${x - half + 14} ${y + height} L${x + half - 14} ${y + height} Q${x + half} ${y + height} ${x + half} ${y + height - 14} L${x + half} ${y + 32} Q${x + half} ${y + 18} ${x + half - 6} ${y + 14} L${x + 14} ${y} L${x - 14} ${y} Z`}
@@ -113,7 +113,7 @@ export function Plant({ x, y, scale = 1, pot = "#ffffff" }: { x: number; y: numb
       <path d="M2 -38 C24 -52 44 -54 56 -48 C42 -34 22 -32 2 -38Z" fill="#3fae7d" />
       <path d="M-24 -42 H24 L18 0 H-18 Z" fill={pot} />
       <rect x="-26" y="-46" width="52" height="8" rx="4" fill={pot} />
-      <rect x="-26" y="-46" width="52" height="8" rx="4" fill="#000" opacity="0.06" />
+      <rect x="-26" y="-46" width="52" height="8" rx="4" fill="#000000" opacity="0.06" />
     </g>
   );
 }

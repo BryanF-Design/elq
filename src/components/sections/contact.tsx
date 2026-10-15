@@ -16,7 +16,7 @@ export function Contact() {
 
       <div className="container-elq relative">
         {/* Clino-style call banner */}
-        <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-gradient-to-r from-brand to-[#4f95ff] px-7 py-9 text-white shadow-brand sm:px-12 sm:py-11">
+        <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-gradient-to-r from-brand to-[#ef5fa2] px-7 py-9 text-white shadow-brand sm:px-12 sm:py-11">
           <svg viewBox="0 0 400 200" className="pointer-events-none absolute left-[38%] -top-8 h-56 w-auto opacity-40" aria-hidden="true">
             <defs>
               <radialGradient id="contact-bubble" cx="0.35" cy="0.3" r="0.75">

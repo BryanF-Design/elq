@@ -16,7 +16,7 @@ export function Faq() {
         <div>
           <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} subheading={t("subheading")} />
 
-          <Reveal delay={0.15} className="relative mt-10 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#3d88ff] to-brand-strong p-7 text-white shadow-brand">
+          <Reveal delay={0.15} className="relative mt-10 overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#ee4e97] to-brand-strong p-7 text-white shadow-brand">
             <div className="absolute -right-12 -top-12 h-36 w-36 overflow-hidden rounded-full border-4 border-white/30 opacity-90">
               <SceneArt motif="estimate" />
             </div>

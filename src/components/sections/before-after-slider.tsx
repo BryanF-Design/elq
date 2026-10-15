@@ -88,7 +88,7 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
       </span>
 
       <div
-        className="absolute inset-y-0 w-1 -translate-x-1/2 bg-white shadow-[0_0_12px_rgba(13,27,62,0.3)]"
+        className="absolute inset-y-0 w-1 -translate-x-1/2 bg-white shadow-[0_0_12px_rgba(58,17,32,0.3)]"
         style={{ left: `${percentage}%` }}
         aria-hidden="true"
       />

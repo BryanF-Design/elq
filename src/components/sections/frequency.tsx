@@ -15,7 +15,7 @@ export function Frequency() {
 
   return (
     <section id="plans" className="relative overflow-hidden py-20 lg:py-28">
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#e3eeff] to-transparent" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#fce6f0] to-transparent" aria-hidden="true" />
       <div className="container-elq relative">
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
           <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} />
@@ -34,7 +34,7 @@ export function Frequency() {
                   className={cn(
                     "relative flex h-full flex-col rounded-[2rem] p-7 transition-transform duration-500 hover:-translate-y-1.5 sm:p-8",
                     featured
-                      ? "bg-gradient-to-b from-[#3d88ff] to-brand-strong text-white shadow-[0_40px_80px_-30px_rgba(31,107,255,0.8)]"
+                      ? "bg-gradient-to-b from-[#ee4e97] to-brand-strong text-white shadow-[0_40px_80px_-30px_rgba(235,51,126,0.8)]"
                       : "border border-white bg-white/90 shadow-card backdrop-blur",
                   )}
                 >
