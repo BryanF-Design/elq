@@ -1,46 +1,112 @@
 import { useTranslations } from "next-intl";
-import { frequencyIcons } from "@/data/frequency";
+import { Check, ArrowRight } from "lucide-react";
+import { frequencyIcons, featuredFrequencyIndex } from "@/data/frequency";
+import { Sparkle } from "@/components/illustrations/sparkle";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
-import { FrequencyCalendar } from "@/components/sections/frequency-calendar";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-const PATTERN_KEYS = ["weekly", "biweekly", "monthly"] as const;
+type Option = { name: string; description: string; features: string[] };
 
 export function Frequency() {
   const t = useTranslations("frequency");
-  const options = t.raw("options") as { name: string; description: string }[];
+  const options = t.raw("options") as Option[];
 
   return (
-    <section className="border-y border-border bg-background-secondary/60 py-24 lg:py-32">
-      <div className="container-elq">
-        <SectionHeading align="center" eyebrow={t("eyebrow")} heading={t("heading")} subheading={t("subheading")} className="mx-auto" />
+    <section id="plans" className="relative overflow-hidden py-20 lg:py-28">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-[#e3eeff] to-transparent" aria-hidden="true" />
+      <div className="container-elq relative">
+        <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+          <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} />
+          <Reveal delay={0.1} className="max-w-md">
+            <p className="text-pretty text-base leading-relaxed text-muted lg:text-right">{t("subheading")}</p>
+          </Reveal>
+        </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div className="mt-14 grid items-stretch gap-6 md:grid-cols-3">
           {options.map((option, index) => {
             const Icon = frequencyIcons[index];
+            const featured = index === featuredFrequencyIndex;
             return (
-              <Reveal
-                key={option.name}
-                delay={index * 0.1}
-                className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-8"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-border-strong text-rose">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <FrequencyCalendar pattern={PATTERN_KEYS[index]} />
-                </div>
-                <div>
-                  <h3 className="font-heading text-2xl text-foreground">{option.name}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">{option.description}</p>
-                </div>
+              <Reveal key={option.name} delay={index * 0.08} className={cn(featured && "md:-mt-4 md:mb-4")}>
+                <article
+                  className={cn(
+                    "relative flex h-full flex-col rounded-[2rem] p-7 transition-transform duration-500 hover:-translate-y-1.5 sm:p-8",
+                    featured
+                      ? "bg-gradient-to-b from-[#3d88ff] to-brand-strong text-white shadow-[0_40px_80px_-30px_rgba(31,107,255,0.8)]"
+                      : "border border-white bg-white/90 shadow-card backdrop-blur",
+                  )}
+                >
+                  {featured ? (
+                    <span className="absolute -top-4 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full bg-sun px-4 py-1.5 text-xs font-bold text-navy shadow-md">
+                      <Sparkle className="h-3 w-3" />
+                      {t("featured")}
+                    </span>
+                  ) : null}
+
+                  <div className="flex items-center justify-between">
+                    <h3 className={cn("font-heading text-xl font-bold", featured ? "text-white" : "text-foreground")}>
+                      {option.name}
+                    </h3>
+                    <span
+                      className={cn(
+                        "flex h-12 w-12 items-center justify-center rounded-2xl",
+                        featured ? "bg-white/15 text-white" : "bg-brand-soft text-brand",
+                      )}
+                    >
+                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    </span>
+                  </div>
+
+                  <p className="mt-5 flex items-baseline gap-2">
+                    <span className={cn("font-heading text-5xl font-extrabold", featured ? "text-white" : "text-brand")}>
+                      {t("priceLabel")}
+                    </span>
+                    <span className={cn("text-sm font-medium", featured ? "text-white/75" : "text-muted")}>
+                      {t("priceSuffix")}
+                    </span>
+                  </p>
+                  <p className={cn("mt-4 text-sm leading-relaxed", featured ? "text-white/85" : "text-muted")}>
+                    {option.description}
+                  </p>
+
+                  <div className={cn("my-6 h-px", featured ? "bg-white/20" : "bg-border")} aria-hidden="true" />
+
+                  <ul className="flex flex-1 flex-col gap-3.5">
+                    {option.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-3 text-sm font-medium">
+                        <span
+                          className={cn(
+                            "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full",
+                            featured ? "bg-sun text-navy" : "bg-brand text-white",
+                          )}
+                        >
+                          <Check className="h-3 w-3" strokeWidth={3} aria-hidden="true" />
+                        </span>
+                        <span className={featured ? "text-white" : "text-foreground"}>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button
+                    as="a"
+                    href="#contact"
+                    variant={featured ? "sun" : "primary"}
+                    size="md"
+                    className="mt-8 w-full"
+                  >
+                    {t("cta")}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </Button>
+                </article>
               </Reveal>
             );
           })}
         </div>
 
-        <Reveal delay={0.3} className="mx-auto mt-10 max-w-lg text-center text-sm text-muted">
-          {t("note")}
+        <Reveal delay={0.2}>
+          <p className="mx-auto mt-12 max-w-xl text-center text-sm text-muted">{t("note")}</p>
         </Reveal>
       </div>
     </section>

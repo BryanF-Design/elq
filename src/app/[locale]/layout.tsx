@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,15 +11,15 @@ import { Footer } from "@/components/layout/footer";
 import { MobileCtaBar } from "@/components/layout/mobile-cta-bar";
 import "../globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
 });
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
 });
 
@@ -97,17 +97,16 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir="ltr"
-      className={`${playfair.variable} ${jakarta.variable} h-full antialiased`}
+      className={`${outfit.variable} ${jakarta.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <div className="grain-overlay" aria-hidden="true" />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          <div className="flex-1 pb-16 lg:pb-0">{children}</div>
+          <div className="flex-1 pb-20 lg:pb-0">{children}</div>
           <Footer />
           <MobileCtaBar />
         </NextIntlClientProvider>

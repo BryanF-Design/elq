@@ -1,5 +1,4 @@
-import { ClipboardList, CalendarCheck, SprayCan, Sofa } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import type { SceneMotif } from "@/components/illustrations/scene-art";
 
-/** Icons paired positionally with `process.steps` in the messages files. */
-export const processIcons: LucideIcon[] = [ClipboardList, CalendarCheck, SprayCan, Sofa];
+/** Illustrations paired positionally with `process.steps` in the messages files. */
+export const processMotifs: SceneMotif[] = ["estimate", "calendar", "detail", "home"];

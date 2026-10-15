@@ -2,29 +2,25 @@ import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Temporary wordmark monogram derived only from the ELQ initials — no
- * invented logo direction. Swap for an official SVG/PNG mark when one
- * exists; every consumer only expects a fixed-size square icon.
+ * Temporary monogram: a sparkling house in a blue tile. Swap for an
+ * official SVG/PNG mark when one exists; consumers only expect a square icon.
  */
 export function ElqMark({ className }: { className?: string }) {
-  const id = useId();
+  const raw = useId();
+  const id = raw.replace(/[^a-zA-Z0-9_-]/g, "");
 
   return (
-    <svg viewBox="0 0 40 40" className={cn("h-8 w-8", className)} role="img" aria-label="ELQ Cleaning monogram">
+    <svg viewBox="0 0 40 40" className={cn("h-9 w-9", className)} role="img" aria-label="ELQ Cleaning">
       <defs>
-        <linearGradient id={`${id}-g`} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#F5E7E4" />
-          <stop offset="100%" stopColor="#C99790" />
+        <linearGradient id={`${id}-g`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#4f95ff" />
+          <stop offset="1" stopColor="#1554d6" />
         </linearGradient>
       </defs>
-      <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10" fill="none" stroke={`url(#${id}-g)`} strokeWidth="1.2" />
-      <path
-        d="M13 12.5h9.5M13 20h7.5M13 27.5h9.5"
-        stroke={`url(#${id}-g)`}
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <circle cx="27.5" cy="20" r="2.1" fill={`url(#${id}-g)`} />
+      <rect width="40" height="40" rx="12" fill={`url(#${id}-g)`} />
+      <path d="M9.5 19.5 L20 11 L30.5 19.5" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      <path d="M12.5 18 V29 H27.5 V18" stroke="#fff" strokeWidth="2.6" strokeLinejoin="round" fill="none" />
+      <path d="M20 19.5c.3 2.6 1.3 3.6 3.6 4-2.3.4-3.3 1.4-3.6 4-.3-2.6-1.3-3.6-3.6-4 2.3-.4 3.3-1.4 3.6-4Z" fill="#ffd23f" />
     </svg>
   );
 }

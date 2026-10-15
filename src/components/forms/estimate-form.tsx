@@ -3,7 +3,7 @@
 import { useId, useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { CheckCircle2, AlertCircle, PhoneCall } from "lucide-react";
+import { CheckCircle2, AlertCircle, PhoneCall, Send } from "lucide-react";
 import { FormField, inputClassName } from "@/components/ui/form-field";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
@@ -107,11 +107,11 @@ export function EstimateForm() {
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center gap-3 rounded-2xl border border-rose/40 bg-surface p-10 text-center"
+        className="flex flex-col items-center gap-3 rounded-3xl bg-brand-soft p-10 text-center"
         role="status"
       >
-        <CheckCircle2 className="h-9 w-9 text-rose" aria-hidden="true" />
-        <h3 className="font-heading text-xl text-foreground">{t("successTitle")}</h3>
+        <CheckCircle2 className="h-12 w-12 fill-brand text-white" aria-hidden="true" />
+        <h3 className="font-heading text-xl font-bold text-foreground">{t("successTitle")}</h3>
         <p className="max-w-sm text-sm leading-relaxed text-muted">{t("successMessage")}</p>
       </motion.div>
     );
@@ -288,15 +288,15 @@ export function EstimateForm() {
       {status === "error" || status === "not_configured" ? (
         <div
           role="alert"
-          className="flex items-start gap-3 rounded-xl border border-red-400/30 bg-red-400/5 p-4 text-sm text-red-300"
+          className="flex items-start gap-3 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900"
         >
           <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
           <div>
-            <p className="font-medium">{status === "not_configured" ? t("notConfiguredTitle") : t("errorTitle")}</p>
-            <p className="mt-1 text-red-300/80">
+            <p className="font-semibold">{status === "not_configured" ? t("notConfiguredTitle") : t("errorTitle")}</p>
+            <p className="mt-1 text-amber-900/80">
               {status === "not_configured" ? t("notConfiguredMessage") : t("errorMessage")}
             </p>
-            <a href={site.phoneHref} className="mt-2 inline-flex items-center gap-1.5 font-medium text-champagne">
+            <a href={site.phoneHref} className="mt-2 inline-flex items-center gap-1.5 font-semibold text-brand">
               <PhoneCall className="h-3.5 w-3.5" aria-hidden="true" />
               {site.phoneDisplay}
             </a>
@@ -304,8 +304,9 @@ export function EstimateForm() {
         </div>
       ) : null}
 
-      <Button type="submit" size="lg" disabled={status === "submitting"} className="mt-2">
+      <Button type="submit" size="lg" disabled={status === "submitting"} className="mt-2 w-full sm:w-auto">
         {status === "submitting" ? t("submitting") : t("submit")}
+        <Send className="h-4 w-4" aria-hidden="true" />
       </Button>
     </form>
   );

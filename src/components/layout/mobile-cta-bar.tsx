@@ -1,27 +1,27 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Phone, ClipboardList } from "lucide-react";
+import { Phone, Sparkles } from "lucide-react";
 import { site } from "@/lib/site";
 
 export function MobileCtaBar() {
   const t = useTranslations("mobileCta");
 
   return (
-    <div className="safe-bottom fixed inset-x-0 bottom-0 z-40 border-t border-border-strong bg-background/95 backdrop-blur-xl lg:hidden">
-      <div className="grid grid-cols-2 gap-px bg-border">
+    <div className="safe-bottom fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white/90 px-3 pt-2.5 pb-2.5 backdrop-blur-xl lg:hidden">
+      <div className="grid grid-cols-2 gap-2.5">
         <a
           href={site.phoneHref}
-          className="flex items-center justify-center gap-2 bg-background py-3.5 text-sm font-semibold text-foreground"
+          className="flex h-12 items-center justify-center gap-2 rounded-full bg-brand text-sm font-semibold text-white shadow-brand"
         >
-          <Phone className="h-4 w-4 text-rose" aria-hidden="true" />
+          <Phone className="h-4 w-4" aria-hidden="true" />
           {t("call")}
         </a>
         <a
           href="#contact"
-          className="flex items-center justify-center gap-2 bg-rose py-3.5 text-sm font-semibold text-background"
+          className="flex h-12 items-center justify-center gap-2 rounded-full bg-sun text-sm font-semibold text-navy"
         >
-          <ClipboardList className="h-4 w-4" aria-hidden="true" />
+          <Sparkles className="h-4 w-4" aria-hidden="true" />
           {t("estimate")}
         </a>
       </div>

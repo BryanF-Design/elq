@@ -8,7 +8,7 @@ cleaning — weekly / biweekly / monthly service), built with Next.js.
 - **Next.js 16** (App Router, Turbopack)
 - **React 19** + **TypeScript** (strict)
 - **Tailwind CSS v4** (CSS-variable design tokens, see `src/app/globals.css`)
-- **next-intl** for i18n routing (`en`, `es`, `zh`, `hi`)
+- **next-intl** for i18n routing (`es`, `en`, `zh`)
 - **Framer Motion** for motion design
 - **lucide-react** for iconography
 
@@ -20,7 +20,7 @@ npm run dev
 ```
 
 Visit `http://localhost:3000` — you'll be redirected to `/en` (or your
-browser's preferred locale among `en`/`es`/`zh`/`hi`).
+browser's preferred locale among `es`/`en`/`zh`).
 
 Other useful scripts:
 
@@ -34,7 +34,7 @@ npm run start      # serve the production build
 ## Project structure
 
 ```
-messages/                 en.json / es.json / zh.json / hi.json — all UI copy
+messages/                 es.json / en.json / zh.json — all UI copy
 src/
   app/
     [locale]/              locale-scoped routes (layout.tsx is the app root layout)
@@ -43,8 +43,9 @@ src/
   components/
     layout/                Navbar, MobileMenu, LanguageSelector, Footer, MobileCtaBar
     hero/                  Hero section
-    sections/              TrustBar, Services, WhyElq, BeforeAfter, Process,
-                            Frequency, Gallery, Testimonials, FAQ, Contact
+    sections/              TrustBar, About, Marquee, Services, WhyElq, Process,
+                            Frequency (plans), BeforeAfter, Gallery,
+                            Testimonials, FAQ, Contact
     forms/                 EstimateForm
     illustrations/         Custom SVG artwork (see "About the imagery" below)
     ui/                    Reveal, Button, SectionHeading, Accordion, etc.
@@ -61,14 +62,17 @@ src/
 This environment has no access to stock-photo providers (Unsplash/Pexels are
 network-blocked here), and the brief explicitly asked to avoid generic stock
 photography and AI-generated-looking imagery. Rather than ship placeholder
-JPEGs, every visual — the hero artwork, the gallery tiles, the before/after
-composition, the wordmark — is a hand-built SVG React component in the ELQ
-black/rose-gold palette (`src/components/illustrations/`). They're
-deliberately abstract/editorial rather than literal photos.
+JPEGs, every visual — the hero bucket of cleaning supplies, the room
+vignettes used in the gallery/about/process sections, the before/after
+composition, the logo mark — is a hand-built SVG React component in the
+light-blue ELQ palette (`src/components/illustrations/`: `hero-art.tsx`,
+`scene-art.tsx`, `before-after-art.tsx`, shared pieces in
+`cleaning-kit.tsx`).
 
-**To swap in real photography:** replace the relevant `<Illustration />`
-usage with `next/image` pointed at a file in `public/images/`. The
-components are self-contained, so this is a drop-in replacement per section.
+**To swap in real photography:** replace the relevant `<HeroArt />` /
+`<SceneArt motif="…" />` usage with `next/image` pointed at a file in
+`public/images/`. Every illustration fills its box, so this is a drop-in
+replacement per tile.
 
 ## Content that still needs real business input
 
@@ -102,10 +106,11 @@ placeholders or honest empty states:
 
 ## Internationalization
 
-Routes are prefixed (`/en`, `/es`, `/zh`, `/hi`), locale is auto-detected
+Routes are prefixed (`/es`, `/en`, `/zh`), locale is auto-detected
 from the browser on first visit, and the choice persists via next-intl's
 locale cookie. `html lang`, canonical URLs, and `hreflang` alternates are
-all set per-locale in `src/app/[locale]/layout.tsx`. All copy lives in
+all set per-locale in `src/app/[locale]/layout.tsx`. The navbar, mobile menu
+and footer show a segmented ES · EN · 中文 switch. All copy lives in
 `messages/*.json` — there is no hardcoded UI text to hunt down when adding a
 locale.
 

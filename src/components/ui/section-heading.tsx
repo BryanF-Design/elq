@@ -1,12 +1,14 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
+import { Eyebrow } from "@/components/ui/eyebrow";
 
 type SectionHeadingProps = {
   eyebrow?: string;
   heading: ReactNode;
   subheading?: ReactNode;
   align?: "left" | "center";
+  tone?: "light" | "dark";
   className?: string;
   headingClassName?: string;
 };
@@ -16,29 +18,26 @@ export function SectionHeading({
   heading,
   subheading,
   align = "left",
+  tone = "light",
   className,
   headingClassName,
 }: SectionHeadingProps) {
+  const onDark = tone === "dark";
+
   return (
-    <div
-      className={cn(
-        "max-w-2xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
-    >
+    <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
       {eyebrow ? (
         <Reveal>
-          <span className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-rose">
-            <span className="h-px w-8 bg-rose" aria-hidden="true" />
+          <Eyebrow tone={tone} className="mb-5">
             {eyebrow}
-          </span>
+          </Eyebrow>
         </Reveal>
       ) : null}
       <Reveal delay={0.05}>
         <h2
           className={cn(
-            "font-heading text-balance text-3xl leading-[1.15] text-foreground sm:text-4xl lg:text-[2.75rem]",
+            "font-heading text-balance text-3xl font-bold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.85rem]",
+            onDark ? "text-white" : "text-foreground",
             headingClassName,
           )}
         >
@@ -47,7 +46,12 @@ export function SectionHeading({
       </Reveal>
       {subheading ? (
         <Reveal delay={0.1}>
-          <p className="mt-5 text-pretty text-base leading-relaxed text-muted sm:text-lg">
+          <p
+            className={cn(
+              "mt-5 text-pretty text-base leading-relaxed sm:text-lg",
+              onDark ? "text-white/80" : "text-muted",
+            )}
+          >
             {subheading}
           </p>
         </Reveal>

@@ -1,256 +1,331 @@
 {
   "meta": {
-    "title": "ELQ Cleaning LLC — 专业住宅清洁服务",
-    "description": "ELQ Cleaning LLC 提供个性化的住宅清洁服务，可按周、双周或按月安排。致电 (480) 546-1725 获取免费报价。"
+    "title": "ELQ Cleaning LLC — 专业家居清洁服务",
+    "description": "ELQ Cleaning LLC 提供每周、每两周或每月一次的个性化住宅清洁服务。欢迎致电 (480) 546-1725 获取免费报价。"
   },
   "nav": {
     "home": "首页",
     "services": "服务项目",
-    "whyElq": "为何选择 ELQ",
+    "about": "关于我们",
     "process": "服务流程",
+    "plans": "清洁方案",
     "faq": "常见问题",
     "contact": "联系我们",
-    "getEstimate": "获取免费报价",
+    "getEstimate": "免费报价",
     "callNow": "立即致电",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单",
     "language": "语言",
-    "skipToContent": "跳至内容"
+    "skipToContent": "跳至主要内容"
   },
   "hero": {
-    "badge": "专业住宅清洁",
-    "titleLine1": "更洁净的家，",
-    "titleLine2": "更从容的生活。",
-    "subtitle": "专业住宅清洁服务，围绕您的家、您的时间安排以及您的安心而设计。",
+    "badge": "专业家居清洁",
+    "titleLine1": "感受",
+    "titleHighlight": "焕然一新",
+    "titleLine2": "的洁净之家",
+    "subtitle": "围绕您的家、您的时间和您的安心而设计的个性化住宅清洁服务 —— 每周、每两周或每月一次。",
     "ctaEstimate": "获取免费报价",
-    "ctaCall": "致电 (480) 546-1725",
-    "frequencyBadge": "每周 · 双周 · 每月",
-    "imageAlt": "一处刚刚清洁完毕、洒满自然光线的明亮居家空间",
-    "scrollHint": "向下滚动"
+    "ctaCall": "立即来电",
+    "stats": [
+      { "value": "6", "label": "项清洁服务" },
+      { "value": "3", "label": "种灵活频率" }
+    ],
+    "floatingSchedule": "每周 · 每两周 · 每月",
+    "floatingScheduleLabel": "按您的时间",
+    "floatingEstimate": "免费报价",
+    "floatingEstimateLabel": "无需承诺",
+    "imageAlt": "一个装满清洁用品的蓝色水桶——喷雾瓶、刷子和海绵——溅起水花"
   },
   "trust": {
     "items": [
       {
-        "title": "值得信赖的服务",
-        "description": "每一次预约，都能获得稳定可靠的清洁品质。"
+        "title": "服务可靠",
+        "description": "每一次预约，都值得您信赖。"
       },
       {
-        "title": "灵活的时间安排",
-        "description": "每周、双周或每月清洁——按您的生活节奏定制。"
+        "title": "时间灵活",
+        "description": "每周、每两周或每月——配合您的生活节奏。"
       },
       {
         "title": "注重细节",
-        "description": "细微之处与整体清洁同样用心对待。"
+        "description": "无论大小细节，我们都同样用心对待。"
       },
       {
-        "title": "专注住宅清洁",
-        "description": "专注于家庭空间，从单个房间到整套住宅皆可覆盖。"
+        "title": "专注住宅",
+        "description": "专注于家居清洁，从单个房间到整栋住宅。"
       }
+    ]
+  },
+  "about": {
+    "eyebrow": "关于 ELQ",
+    "heading": "让您的家洁净明亮",
+    "body": "ELQ Cleaning 秉持一个理念：清洁安排应当配合您的生活，而不是让生活迁就清洁。每一个方案都会根据您的房间、需求重点和时间安排量身定制。",
+    "badgeValue": "3",
+    "badgeLabel": "种频率可选",
+    "highlights": [
+      { "value": "每周", "label": "最稳定" },
+      { "value": "每两周", "label": "节奏均衡" },
+      { "value": "每月", "label": "彻底焕新" }
+    ],
+    "cta": "了解更多",
+    "questions": "有任何问题？",
+    "imageAlts": [
+      "柔和自然光下一尘不染的厨房台面",
+      "摆放着叠好毛巾的明亮浴室",
+      "明亮整洁的客厅"
     ]
   },
   "services": {
     "eyebrow": "服务内容",
     "heading": "我们的清洁服务",
-    "subheading": "多种住宅清洁服务可自由组合与安排，真正贴合您的生活方式。",
-    "frequencyNote": "支持每周、双周或每月安排。",
+    "subheading": "多种住宅清洁服务，可自由组合，并按照您的实际生活方式安排时间。",
+    "frequencyNote": "可选每周、每两周或每月",
+    "cta": "预约此项服务",
     "items": [
       {
         "title": "定期清洁",
-        "description": "持续的日常维护，让每个房间在每次到访之间都保持整洁，时间由您决定。"
+        "description": "持续的日常维护，按您选择的时间安排，让每个房间在两次上门之间始终保持整洁。"
       },
       {
         "title": "深度清洁",
-        "description": "全面细致的彻底清洁，处理日常清洁难以顾及的细节。"
+        "description": "从上到下的彻底清洁，照顾到日常清洁无法覆盖的细节。"
       },
       {
         "title": "搬入 / 搬出清洁",
-        "description": "为空置的住宅进行全面焕新，无论是迎接新居民还是交接给下一位业主。"
+        "description": "为空置的房屋做一次全面焕新，迎接新的篇章——无论是您的还是下一位住户的。"
       },
       {
         "title": "厨房清洁",
-        "description": "台面、电器、橱柜与地面，用心清洁每一处日常使用的表面。"
+        "description": "台面、电器、橱柜和地面，用心清洁您每天都会使用的每一处表面。"
       },
       {
         "title": "浴室清洁",
-        "description": "从镜面到地面，对每一件洁具与表面进行细致消毒清洁。"
+        "description": "从镜面到地面，对每一个洁具和表面进行细致的消毒清洁。"
       },
       {
-        "title": "卧室与起居空间",
-        "description": "除尘、地面清洁与整理，让共享空间变得真正宜居。"
+        "title": "卧室与起居区",
+        "description": "除尘、清洁地面和整理收纳，让共享空间成为您真正享受的地方。"
       }
     ]
   },
   "whyElq": {
-    "eyebrow": "为何选择 ELQ",
+    "eyebrow": "选择我们的理由",
     "heading": "为什么选择 ELQ Cleaning？",
-    "subheading": "ELQ Cleaning 的理念很简单：您的家应该拥有适合您生活方式的清洁方案，而不是反过来迁就服务。",
+    "subheading": "选择 ELQ，您得到的不只是清洁服务——更是一位用心呵护您家的伙伴。",
     "points": [
       {
         "title": "个性化清洁方案",
-        "description": "每个家庭都不同，因此每个方案都会根据您的房间布局、优先事项与偏好量身定制。"
+        "description": "每个方案都围绕您的房间、需求重点和个人偏好来制定。"
       },
       {
         "title": "灵活的时间安排",
-        "description": "可选择每周、双周或每月服务，并可随生活节奏的变化随时调整。"
+        "description": "可选择每周、每两周或每月服务，并可随生活变化随时调整。"
       },
       {
         "title": "注重细节",
-        "description": "踢脚线、五金件、边角这些细节，我们都视为工作本身的一部分，而非附加项目。"
+        "description": "踢脚线、洁具、边角——细节是工作的一部分，而不是事后补充。"
       },
       {
         "title": "尊重您的家",
-        "description": "我们以细心和体贴的态度在您的空间中工作，如同对待自己的家一样。"
+        "description": "我们在您家中细心作业，就像希望别人对待我们自己的家一样。"
       },
       {
-        "title": "始终如一的清洁标准",
-        "description": "每一次到访都保持同样的用心程度，让您始终清楚可以期待什么。"
+        "title": "始终如一",
+        "description": "每次上门都保持同样的用心程度，让您始终心中有数。"
       }
     ]
   },
+  "marquee": {
+    "items": [
+      "家居清洁",
+      "深度清洁",
+      "搬入 / 搬出清洁",
+      "厨房清洁",
+      "浴室清洁",
+      "卧室与起居区",
+      "每周 · 每两周 · 每月"
+    ]
+  },
   "beforeAfter": {
-    "eyebrow": "看得见的改变",
-    "heading": "清洁前后对比",
-    "subheading": "拖动滑块，感受一次彻底清洁为房间带来的变化。",
+    "eyebrow": "前后对比",
+    "heading": "看看清洁前后的变化",
+    "subheading": "拖动滑块，看看一次彻底的清洁能为房间带来怎样的变化。",
     "beforeLabel": "清洁前",
-    "afterLabel": "清洁后"
+    "afterLabel": "清洁后",
+    "points": [
+      "表面与层架一尘不染",
+      "洁具与地面光洁闪亮",
+      "房间清新、安静、整齐"
+    ]
   },
   "process": {
     "eyebrow": "服务流程",
-    "heading": "通往整洁之家的简单路径",
-    "subheading": "从您发出第一条消息到拥有一个纤尘不染的家，整个流程都力求简单清晰。",
+    "heading": "简单几步，从预约到一尘不染的家",
+    "subheading": "从您的第一条消息到干净的家，整个流程简单明了。",
     "steps": [
       {
         "number": "01",
         "title": "申请报价",
-        "description": "告诉我们您家的基本情况和需求——只需几分钟。"
+        "description": "告诉我们您家的情况和需求——只需几分钟。"
       },
       {
         "number": "02",
-        "title": "选择时间安排",
-        "description": "选择每周、双周或每月服务，以及最适合您的日期与时间。"
+        "title": "选择时间",
+        "description": "选择每周、每两周或每月服务，以及最适合您的日期和时间。"
       },
       {
         "number": "03",
-        "title": "专业清洁",
-        "description": "我们的团队会以您本人般的细致态度打理您的家。"
+        "title": "上门清洁",
+        "description": "我们的团队会像您一样用心照顾您的家，关注每一个细节。"
       },
       {
         "number": "04",
-        "title": "享受整洁的家",
-        "description": "回到干净、舒适的空间，期待下一次到访。"
+        "title": "享受您的家",
+        "description": "回到一个干净、宁静的空间——并期待下一次上门服务。"
       }
     ]
   },
   "frequency": {
-    "eyebrow": "由您掌控节奏",
-    "heading": "每周。双周。每月。",
-    "subheading": "您的生活节奏决定服务频率。选择最适合家庭的安排，并随时根据需要调整。",
+    "eyebrow": "清洁方案",
+    "heading": "选择最适合您的清洁方案",
+    "subheading": "由您的生活节奏决定频率。选择适合您家庭的方案，并可随生活变化随时调整。",
+    "priceLabel": "免费",
+    "priceSuffix": "报价",
+    "featured": "均衡之选",
+    "cta": "获取我的报价",
     "options": [
       {
         "name": "每周",
-        "description": "最稳定的选择——适合希望家中每周都保持整洁的忙碌家庭。"
+        "description": "最稳定的选择——非常适合希望每周都有干净家居的忙碌家庭。",
+        "features": [
+          "每周上门一次",
+          "适合忙碌的家庭",
+          "效果最稳定",
+          "可选全部服务"
+        ]
       },
       {
-        "name": "双周",
-        "description": "均衡的节奏，无需每周清洁也能保持清爽。"
+        "name": "每两周",
+        "description": "均衡的节奏，无需每周上门也能保持清新。",
+        "features": [
+          "每两周上门一次",
+          "清新整洁，维护均衡",
+          "日期时间灵活",
+          "可选全部服务"
+        ]
       },
       {
         "name": "每月",
-        "description": "每月一次的彻底焕新，适合使用频率较低的住宅。"
+        "description": "每月一次的彻底焕新，适合人员走动较少的家庭。",
+        "features": [
+          "每月一次彻底清洁",
+          "适合走动较少的家庭",
+          "可随时调整",
+          "可选全部服务"
+        ]
       }
     ],
-    "note": "不确定哪种频率最适合？在申请报价时，我们可以帮您做出选择。"
+    "note": "不确定哪种最适合？申请报价时我们会帮您一起决定。"
   },
   "gallery": {
-    "eyebrow": "细节之处",
-    "heading": "我们在意的每一个细节",
-    "subheading": "了解住宅清洁所关注的空间与细节。",
+    "eyebrow": "细节一览",
+    "heading": "每个房间，每个细节",
+    "subheading": "看看住宅清洁所关注的各类空间与细节。",
     "items": [
-      { "alt": "在自然光下整洁有序的厨房台面" },
-      { "alt": "洁具干净、毛巾叠放整齐的整洁浴室" },
-      { "alt": "在宁静整洁的卧室中铺好的床铺" },
-      { "alt": "表面整洁无尘的明亮客厅" },
-      { "alt": "洁净光亮表面的特写细节" },
-      { "alt": "叠放整齐的床品与有序的衣橱" }
+      { "title": "厨房", "alt": "自然光下干净整洁的厨房台面" },
+      { "title": "地面", "alt": "刚刚拖过、光洁发亮的地面" },
+      { "title": "浴室", "alt": "洁具干净、毛巾叠放整齐的浴室" },
+      { "title": "卧室", "alt": "安静整洁的卧室里铺得平整的床" },
+      { "title": "细节", "alt": "正在喷洒并擦亮表面的特写" },
+      { "title": "起居区", "alt": "表面整洁无尘的明亮客厅" }
     ]
   },
   "testimonials": {
     "eyebrow": "客户反馈",
-    "heading": "客户怎么说",
-    "subheading": "我们才刚刚开始收集评价——这里将展示 ELQ 真实客户的真实反馈。",
+    "heading": "客户评价",
+    "subheading": "我们刚刚开始收集评价——这里将留给真实 ELQ 客户的真实反馈。",
     "emptyTitle": "客户评价即将上线",
-    "emptyDescription": "随着 ELQ Cleaning 完成更多住宅清洁项目，经过核实的客户评价将陆续在此展示。"
+    "emptyDescription": "随着 ELQ Cleaning 服务更多家庭，经过核实的客户评价将展示在这里。"
   },
   "faq": {
     "eyebrow": "常见问题",
     "heading": "常见问题解答",
-    "subheading": "为您解答业主最常提出的问题。",
+    "subheading": "房主们最常问到的问题。",
+    "cardTitle": "还有其他问题？",
+    "cardText": "欢迎来电，我们很乐意帮您规划最适合您家的清洁方案。",
     "items": [
       {
         "question": "你们清洁哪些区域？",
-        "answer": "ELQ Cleaning 专注于住宅物业——厨房、浴室、卧室、起居区域以及家中其他空间。申请报价时请告诉我们您家的房屋布局。"
+        "answer": "ELQ Cleaning 专注于住宅——厨房、浴室、卧室、起居区以及家中的其他空间。申请报价时请告诉我们您家的户型布局。"
       },
       {
-        "question": "多久可以安排一次清洁？",
-        "answer": "您可以选择每周、双周或每月安排清洁，具体取决于最适合您家庭的节奏。"
+        "question": "我可以多久安排一次清洁？",
+        "answer": "您可以选择每周、每两周或每月一次，选择最符合您家庭生活节奏的频率。"
       },
       {
         "question": "清洁时我需要在家吗？",
-        "answer": "完全由您决定。有些客户喜欢在清洁期间待在家中，也有客户会安排好进出方式，让清洁在他们外出时进行。请在预约时告诉我们您的偏好。"
+        "answer": "完全由您决定。有些客户喜欢在清洁时在家，也有客户会安排好进门方式，让我们在他们外出时完成清洁。预约时告诉我们您的偏好即可。"
       },
       {
-        "question": "可以申请定期服务吗？",
-        "answer": "可以。每周、双周或每月的定期服务，是许多客户与 ELQ Cleaning 合作时最常选择的方式之一。"
+        "question": "可以预约定期服务吗？",
+        "answer": "可以。每周、每两周或每月的定期服务，是客户与 ELQ Cleaning 合作最受欢迎的方式之一。"
       },
       {
         "question": "如何申请报价？",
-        "answer": "致电 (480) 546-1725，或在本页面填写报价表单并附上您家的一些基本信息，我们会尽快与您联系。"
+        "answer": "请致电 (480) 546-1725，或在本页填写报价表并提供一些关于您家的信息，我们会尽快与您联系。"
       },
       {
-        "question": "清洁前我需要做些什么准备？",
-        "answer": "提前收好个人物品和贵重物品，可以让我们的团队更专注地完成清洁工作。如果对某个房间有特别要求，请提前告知我们。"
+        "question": "清洁预约前我需要做什么？",
+        "answer": "提前收好个人物品和贵重物品，可以帮助我们的团队专心清洁。如果对某个房间有特别要求，请提前告诉我们。"
       }
     ]
   },
   "contact": {
-    "eyebrow": "开始预约",
-    "heading": "准备好拥有一个更整洁的家了吗？",
-    "subheading": "立即致电进行简短沟通，或留下您的信息，我们会尽快为您提供报价。",
+    "eyebrow": "立即开始",
+    "heading": "准备好拥有更干净的家了吗？",
+    "subheading": "立即来电简单沟通，或留下一些信息，我们会尽快为您提供报价。",
+    "bannerTitle": "来电获取免费报价",
+    "bannerText": "直接与我们沟通——我们会解答您的问题，帮您选择合适的方案。",
     "callCta": "立即致电",
-    "callSubtext": "与我们直接沟通",
-    "formCta": "申请报价",
+    "callSubtext": "致电我们",
+    "perks": [
+      "免费报价，无需承诺",
+      "每周、每两周或每月",
+      "为您的家量身定制"
+    ],
     "form": {
       "heading": "申请报价",
+      "subheading": "大约只需两分钟。",
       "name": "姓名",
-      "namePlaceholder": "王小姐",
+      "namePlaceholder": "张伟",
       "phone": "电话号码",
       "phonePlaceholder": "(480) 555-0100",
       "email": "电子邮箱",
-      "emailPlaceholder": "jane@email.com",
+      "emailPlaceholder": "name@email.com",
       "serviceType": "服务类型",
-      "serviceTypePlaceholder": "请选择服务类型",
+      "serviceTypePlaceholder": "请选择服务",
       "frequency": "清洁频率",
-      "frequencyPlaceholder": "请选择清洁频率",
-      "propertyType": "房产类型",
-      "propertyTypePlaceholder": "请选择房产类型",
+      "frequencyPlaceholder": "请选择频率",
+      "propertyType": "房屋类型",
+      "propertyTypePlaceholder": "请选择房屋类型",
       "propertyTypeOptions": {
-        "house": "独栋住宅",
+        "house": "独立屋",
         "apartment": "公寓 / 共管公寓",
         "townhome": "联排别墅"
       },
       "bedrooms": "卧室数量",
       "bathrooms": "浴室数量",
-      "preferredDate": "期望日期",
+      "preferredDate": "首选日期",
       "message": "留言",
-      "messagePlaceholder": "请简单介绍一下您家的情况以及您的需求。",
+      "messagePlaceholder": "简单介绍一下您的家以及您的需求。",
       "submit": "提交申请",
-      "submitting": "发送中…",
-      "successTitle": "感谢您，我们已收到您的申请。",
-      "successMessage": "我们已收到您的信息，将尽快与您联系。如有紧急需要，也可直接致电 (480) 546-1725。",
-      "errorTitle": "出现了一些问题",
-      "errorMessage": "暂时无法发送您的申请，请重试，或直接致电 (480) 546-1725。",
-      "notConfiguredTitle": "在线申请功能尚未连接",
-      "notConfiguredMessage": "此表单目前尚未连接到邮件发送服务。请致电 (480) 546-1725，我们将很乐意直接为您提供帮助。",
+      "submitting": "提交中…",
+      "successTitle": "谢谢——我们已收到您的申请。",
+      "successMessage": "我们已收到您的信息，会尽快与您联系。如有急事，请直接致电 (480) 546-1725。",
+      "errorTitle": "出现问题",
+      "errorMessage": "暂时无法提交您的申请。请重试，或直接致电 (480) 546-1725。",
+      "notConfiguredTitle": "在线申请尚未开通",
+      "notConfiguredMessage": "此表单尚未连接邮件发送功能。请致电 (480) 546-1725，我们很乐意直接为您服务。",
       "errors": {
         "required": "此项为必填项。",
         "invalidEmail": "请输入有效的电子邮箱地址。",
@@ -263,12 +338,13 @@
     "estimate": "免费报价"
   },
   "footer": {
-    "description": "专业住宅清洁服务，贴合您的家与您的时间安排。",
-    "servicesHeading": "快速链接",
+    "description": "专业住宅清洁，根据您的家和时间量身定制。",
+    "servicesHeading": "浏览",
     "contactHeading": "联系方式",
     "phoneLabel": "电话",
     "languageLabel": "语言",
-    "rights": "版权所有，保留所有权利。"
+    "ctaTitle": "一通电话，开启更洁净的家。",
+    "rights": "版权所有。"
   },
   "common": {
     "close": "关闭"

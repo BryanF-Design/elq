@@ -6,11 +6,12 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "whyElq": "Why ELQ",
-    "process": "Process",
+    "about": "About",
+    "process": "How It Works",
+    "plans": "Plans",
     "faq": "FAQ",
     "contact": "Contact",
-    "getEstimate": "Get a Free Estimate",
+    "getEstimate": "Free Estimate",
     "callNow": "Call Now",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -19,14 +20,27 @@
   },
   "hero": {
     "badge": "Professional House Cleaning",
-    "titleLine1": "A cleaner home.",
-    "titleLine2": "A calmer life.",
-    "subtitle": "Professional residential cleaning designed around your home, your schedule, and your peace of mind.",
+    "titleLine1": "Feel the",
+    "titleHighlight": "freshness",
+    "titleLine2": "of a truly clean home",
+    "subtitle": "Personalized residential cleaning designed around your home, your schedule, and your peace of mind — weekly, biweekly, or monthly.",
     "ctaEstimate": "Get a Free Estimate",
-    "ctaCall": "Call (480) 546-1725",
-    "frequencyBadge": "Weekly · Biweekly · Monthly",
-    "imageAlt": "A bright, freshly cleaned living space with soft natural light",
-    "scrollHint": "Scroll"
+    "ctaCall": "Call us now",
+    "stats": [
+      {
+        "value": "6",
+        "label": "Cleaning services"
+      },
+      {
+        "value": "3",
+        "label": "Flexible schedules"
+      }
+    ],
+    "floatingSchedule": "Weekly · Biweekly · Monthly",
+    "floatingScheduleLabel": "Your schedule",
+    "floatingEstimate": "Free estimate",
+    "floatingEstimateLabel": "No commitment",
+    "imageAlt": "A blue bucket full of cleaning supplies — spray bottles, brushes and sponges — with a splash of water"
   },
   "trust": {
     "items": [
@@ -48,11 +62,40 @@
       }
     ]
   },
+  "about": {
+    "eyebrow": "About ELQ",
+    "heading": "We make homes clean & bright",
+    "body": "ELQ Cleaning is built around one idea: your home deserves a cleaning routine that fits your life, not the other way around. Every plan is personalized to your rooms, your priorities, and your schedule.",
+    "badgeValue": "3",
+    "badgeLabel": "Schedules to choose from",
+    "highlights": [
+      {
+        "value": "Weekly",
+        "label": "Most consistent"
+      },
+      {
+        "value": "Biweekly",
+        "label": "Balanced rhythm"
+      },
+      {
+        "value": "Monthly",
+        "label": "Thorough reset"
+      }
+    ],
+    "cta": "Find out more",
+    "questions": "Have any questions?",
+    "imageAlts": [
+      "A spotless kitchen counter in soft natural light",
+      "A shining bathroom with folded towels",
+      "A bright, tidy living room"
+    ]
+  },
   "services": {
     "eyebrow": "What We Offer",
-    "heading": "Our Cleaning Services",
-    "subheading": "A range of residential cleaning services that can be combined and scheduled to match the way you actually live.",
-    "frequencyNote": "Available weekly, biweekly, or monthly.",
+    "heading": "Our cleaning services",
+    "subheading": "Residential cleaning services that can be combined and scheduled to match the way you actually live.",
+    "frequencyNote": "Available weekly, biweekly, or monthly",
+    "cta": "Request this service",
     "items": [
       {
         "title": "Recurring Cleaning",
@@ -63,7 +106,7 @@
         "description": "A thorough, top-to-bottom clean that reaches the details a routine visit doesn't cover."
       },
       {
-        "title": "Move-In / Move-Out Cleaning",
+        "title": "Move-In / Move-Out",
         "description": "A full reset for an empty home, ready for the next chapter — yours or someone else's."
       },
       {
@@ -75,19 +118,19 @@
         "description": "A careful, sanitized clean for every fixture and surface, from the mirror to the floor."
       },
       {
-        "title": "Bedroom & Living Areas",
+        "title": "Bedrooms & Living Areas",
         "description": "Dusting, floors, and tidying that turn shared spaces into rooms you actually enjoy being in."
       }
     ]
   },
   "whyElq": {
-    "eyebrow": "Why ELQ",
-    "heading": "Why Choose ELQ Cleaning?",
-    "subheading": "ELQ Cleaning is built around one idea: your home deserves a cleaning routine that fits your life, not the other way around.",
+    "eyebrow": "Why Choose Us",
+    "heading": "Why choose ELQ Cleaning?",
+    "subheading": "With ELQ you're not just getting a cleaning service — you're gaining a partner who treats your home with care.",
     "points": [
       {
         "title": "Personalized cleaning plans",
-        "description": "Every home is different, so every plan is put together around your rooms, your priorities, and your preferences."
+        "description": "Every plan is put together around your rooms, your priorities, and your preferences."
       },
       {
         "title": "Flexible scheduling",
@@ -95,29 +138,45 @@
       },
       {
         "title": "Attention to detail",
-        "description": "We treat the details — baseboards, fixtures, edges — as part of the job, not an afterthought."
+        "description": "Baseboards, fixtures, edges — the details are part of the job, not an afterthought."
       },
       {
         "title": "Respect for your home",
-        "description": "We move through your space carefully and thoughtfully, the way we'd want someone to treat ours."
+        "description": "We move through your space carefully, the way we'd want someone to treat ours."
       },
       {
-        "title": "Consistent cleaning routines",
+        "title": "Consistent routines",
         "description": "The same level of care, visit after visit, so you always know what to expect."
       }
     ]
   },
+  "marquee": {
+    "items": [
+      "House cleaning",
+      "Deep cleaning",
+      "Move-in / Move-out",
+      "Kitchen cleaning",
+      "Bathroom cleaning",
+      "Bedrooms & living areas",
+      "Weekly · Biweekly · Monthly"
+    ]
+  },
   "beforeAfter": {
     "eyebrow": "The Difference",
-    "heading": "Before & After",
+    "heading": "See the before & after",
     "subheading": "Drag the slider to see the kind of transformation a thorough cleaning brings to a room.",
     "beforeLabel": "Before",
-    "afterLabel": "After"
+    "afterLabel": "After",
+    "points": [
+      "Dust-free surfaces and shelves",
+      "Shining fixtures and floors",
+      "Fresh, calm, organized rooms"
+    ]
   },
   "process": {
     "eyebrow": "How It Works",
-    "heading": "A simple path to a cleaner home",
-    "subheading": "From your first message to a spotless home, the process is designed to be simple and clear.",
+    "heading": "Check out our simple steps, from request to a spotless home",
+    "subheading": "From your first message to a clean home, the process is designed to be simple and clear.",
     "steps": [
       {
         "number": "01",
@@ -142,49 +201,91 @@
     ]
   },
   "frequency": {
-    "eyebrow": "On Your Schedule",
-    "heading": "Weekly. Biweekly. Monthly.",
-    "subheading": "Your routine sets the pace. Choose the frequency that fits your household and change it whenever your life does.",
+    "eyebrow": "Cleaning Plans",
+    "heading": "Choose your perfect clean",
+    "subheading": "Your routine sets the pace. Pick the frequency that fits your household and change it whenever your life does.",
+    "priceLabel": "Free",
+    "priceSuffix": "estimate",
+    "featured": "Balanced choice",
+    "cta": "Get my estimate",
     "options": [
       {
         "name": "Weekly",
-        "description": "The most consistent option — ideal for busy households that want their home cleaned every week."
+        "description": "The most consistent option — ideal for busy households that want their home cleaned every week.",
+        "features": [
+          "A visit every week",
+          "Ideal for busy households",
+          "Most consistent results",
+          "All services available"
+        ]
       },
       {
         "name": "Biweekly",
-        "description": "A balanced rhythm that keeps things fresh without a visit every single week."
+        "description": "A balanced rhythm that keeps things fresh without a visit every single week.",
+        "features": [
+          "A visit every two weeks",
+          "Fresh home, balanced upkeep",
+          "Flexible day and time",
+          "All services available"
+        ]
       },
       {
         "name": "Monthly",
-        "description": "A thorough reset once a month, well suited to lighter-traffic homes."
+        "description": "A thorough reset once a month, well suited to lighter-traffic homes.",
+        "features": [
+          "One thorough visit a month",
+          "Great for lighter-traffic homes",
+          "Adjust whenever you need",
+          "All services available"
+        ]
       }
     ],
-    "note": "Not sure what fits best? We can help you decide when you request your estimate."
+    "note": "Not sure what fits best? We'll help you decide when you request your estimate."
   },
   "gallery": {
     "eyebrow": "A Closer Look",
-    "heading": "The details we care about",
+    "heading": "Every room, every detail",
     "subheading": "A look at the kinds of spaces and details residential cleaning is all about.",
     "items": [
-      { "alt": "A clean, organized kitchen counter with natural light" },
-      { "alt": "A tidy bathroom with clean fixtures and folded towels" },
-      { "alt": "A neatly made bed in a calm, organized bedroom" },
-      { "alt": "A bright living room with tidy, dust-free surfaces" },
-      { "alt": "Close-up detail of a clean, polished surface" },
-      { "alt": "An organized closet with folded linens" }
+      {
+        "title": "Kitchens",
+        "alt": "A clean, organized kitchen counter with natural light"
+      },
+      {
+        "title": "Floors",
+        "alt": "A freshly mopped, shining floor"
+      },
+      {
+        "title": "Bathrooms",
+        "alt": "A tidy bathroom with clean fixtures and folded towels"
+      },
+      {
+        "title": "Bedrooms",
+        "alt": "A neatly made bed in a calm, organized bedroom"
+      },
+      {
+        "title": "Details",
+        "alt": "Close-up of a surface being sprayed and polished"
+      },
+      {
+        "title": "Living areas",
+        "alt": "A bright living room with tidy, dust-free surfaces"
+      }
     ]
   },
   "testimonials": {
     "eyebrow": "Client Feedback",
-    "heading": "What Clients Say",
+    "heading": "What clients say",
     "subheading": "We're just getting started collecting reviews — this space is reserved for real feedback from real ELQ clients.",
     "emptyTitle": "Client reviews are coming soon",
-    "emptyDescription": "As ELQ Cleaning completes more residential projects, verified client testimonials will appear here."
+    "emptyDescription": "As ELQ Cleaning completes more homes, verified client testimonials will appear here."
   },
   "faq": {
     "eyebrow": "Questions",
-    "heading": "Frequently Asked Questions",
+    "heading": "Frequently asked questions",
     "subheading": "Answers to the questions we hear most from homeowners.",
+    "cardTitle": "Still have questions?",
+    "cardText": "Call us and we'll gladly help you plan the right cleaning for your home.",
     "items": [
       {
         "question": "What areas do you clean?",
@@ -216,11 +317,18 @@
     "eyebrow": "Get Started",
     "heading": "Ready for a cleaner home?",
     "subheading": "Call now for a quick conversation, or send us a few details and we'll follow up with an estimate.",
+    "bannerTitle": "Call for a free estimate",
+    "bannerText": "Speak with us directly — we'll answer your questions and help you choose the right plan.",
     "callCta": "Call Now",
-    "callSubtext": "Speak with us directly",
-    "formCta": "Request an Estimate",
+    "callSubtext": "Call us",
+    "perks": [
+      "Free, no-commitment estimate",
+      "Weekly, biweekly or monthly",
+      "Personalized to your home"
+    ],
     "form": {
-      "heading": "Request an Estimate",
+      "heading": "Request an estimate",
+      "subheading": "Takes about two minutes.",
       "name": "Full Name",
       "namePlaceholder": "Jane Smith",
       "phone": "Phone Number",
@@ -268,6 +376,7 @@
     "contactHeading": "Contact",
     "phoneLabel": "Phone",
     "languageLabel": "Language",
+    "ctaTitle": "Your cleaner home starts with one call.",
     "rights": "All rights reserved."
   },
   "common": {

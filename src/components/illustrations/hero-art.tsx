@@ -1,92 +1,184 @@
 import { useId } from "react";
+import { Bubble, Glint, SprayBottle } from "@/components/illustrations/cleaning-kit";
 
 /**
- * Atmospheric, editorial hero visual: layered light, soft focus, and film
- * grain in the ELQ black/rose-gold palette. Reads as a moody photograph of
- * light in a clean space rather than a literal drawn scene — standing in
- * for commissioned photography (documented in README).
+ * Hero centerpiece: a glossy blue bucket packed with cleaning supplies,
+ * a splash of water and floating soap bubbles. Hand-built SVG standing in
+ * for product photography (see README → "About the imagery").
  */
-export function HeroArt({
-  className,
-  label = "Soft light filtering through a freshly cleaned home",
-}: {
-  className?: string;
-  label?: string;
-}) {
-  const id = useId();
+export function HeroArt({ className, label }: { className?: string; label: string }) {
+  const raw = useId();
+  const id = raw.replace(/[^a-zA-Z0-9_-]/g, "");
+  const u = (name: string) => `url(#${id}-${name})`;
 
   return (
-    <svg viewBox="0 0 640 760" className={className} role="img" aria-label={label}>
+    <svg viewBox="0 0 600 600" className={className} role="img" aria-label={label}>
       <defs>
-        <radialGradient id={`${id}-bg`} cx="72%" cy="6%" r="95%">
-          <stop offset="0%" stopColor="#221a19" />
-          <stop offset="35%" stopColor="#150f0f" />
-          <stop offset="100%" stopColor="#070707" />
-        </radialGradient>
-        <radialGradient id={`${id}-glow1`} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#E8C9C3" stopOpacity="0.95" />
-          <stop offset="55%" stopColor="#D7AAA4" stopOpacity="0.35" />
-          <stop offset="100%" stopColor="#D7AAA4" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id={`${id}-glow2`} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#C99790" stopOpacity="0.8" />
-          <stop offset="100%" stopColor="#C99790" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id={`${id}-sweep`} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#F5E7E4" stopOpacity="0" />
-          <stop offset="45%" stopColor="#F5E7E4" stopOpacity="0.5" />
-          <stop offset="55%" stopColor="#D7AAA4" stopOpacity="0.32" />
-          <stop offset="100%" stopColor="#D7AAA4" stopOpacity="0" />
+        <linearGradient id={`${id}-bucket`} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#1554d6" />
+          <stop offset="0.28" stopColor="#3f8cff" />
+          <stop offset="0.42" stopColor="#6aa8ff" />
+          <stop offset="0.6" stopColor="#2a76ff" />
+          <stop offset="1" stopColor="#0f45b8" />
         </linearGradient>
-        <linearGradient id={`${id}-floor`} x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#0c0a0a" stopOpacity="0" />
-          <stop offset="100%" stopColor="#050505" stopOpacity="0.9" />
+        <linearGradient id={`${id}-rim`} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#4c95ff" />
+          <stop offset="0.45" stopColor="#a9ccff" />
+          <stop offset="1" stopColor="#3a80f5" />
         </linearGradient>
-        <radialGradient id={`${id}-vignette`} cx="50%" cy="45%" r="75%">
-          <stop offset="55%" stopColor="#000000" stopOpacity="0" />
-          <stop offset="100%" stopColor="#000000" stopOpacity="0.55" />
+        <linearGradient id={`${id}-yellow`} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#ffe27a" />
+          <stop offset="0.5" stopColor="#ffd23f" />
+          <stop offset="1" stopColor="#f2b705" />
+        </linearGradient>
+        <linearGradient id={`${id}-teal`} x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#7fe3f0" />
+          <stop offset="0.55" stopColor="#2fc0db" />
+          <stop offset="1" stopColor="#1497bd" />
+        </linearGradient>
+        <linearGradient id={`${id}-pink`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#ffb3cb" />
+          <stop offset="1" stopColor="#f2709c" />
+        </linearGradient>
+        <linearGradient id={`${id}-water`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#bfe0ff" stopOpacity="0.95" />
+          <stop offset="1" stopColor="#3f95ff" stopOpacity="0.85" />
+        </linearGradient>
+        <radialGradient id={`${id}-bubble`} cx="0.35" cy="0.3" r="0.75">
+          <stop offset="0" stopColor="#ffffff" stopOpacity="0.85" />
+          <stop offset="0.55" stopColor="#dcebff" stopOpacity="0.25" />
+          <stop offset="0.85" stopColor="#b8d6ff" stopOpacity="0.35" />
+          <stop offset="1" stopColor="#f5c6ff" stopOpacity="0.55" />
         </radialGradient>
-        <filter id={`${id}-blur-lg`} x="-60%" y="-60%" width="220%" height="220%">
-          <feGaussianBlur stdDeviation="70" />
-        </filter>
-        <filter id={`${id}-blur-md`} x="-60%" y="-60%" width="220%" height="220%">
-          <feGaussianBlur stdDeviation="34" />
-        </filter>
-        <filter id={`${id}-grain`}>
-          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
-          <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0" />
-        </filter>
+        <radialGradient id={`${id}-shadow`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#0d1b3e" stopOpacity="0.35" />
+          <stop offset="1" stopColor="#0d1b3e" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id={`${id}-pom`} cx="0.4" cy="0.35" r="0.7">
+          <stop offset="0" stopColor="#8cc4ff" />
+          <stop offset="1" stopColor="#1f6bff" />
+        </radialGradient>
       </defs>
 
-      <rect width="640" height="760" fill={`url(#${id}-bg)`} />
+      {/* ground shadow */}
+      <ellipse cx="305" cy="540" rx="210" ry="26" fill={u("shadow")} />
 
-      {/* Soft layered light — the visual anchor, standing in for a window/highlight */}
-      <circle cx="460" cy="150" r="230" fill={`url(#${id}-glow1)`} filter={`url(#${id}-blur-lg)`} />
-      <circle cx="150" cy="560" r="170" fill={`url(#${id}-glow2)`} opacity="0.55" filter={`url(#${id}-blur-lg)`} />
-      <circle cx="500" cy="520" r="90" fill={`url(#${id}-glow1)`} opacity="0.4" filter={`url(#${id}-blur-md)`} />
+      {/* handle (behind contents) */}
+      <path d="M150 312 C150 92 452 92 452 312" fill="none" stroke="#b9c9e4" strokeWidth="9" strokeLinecap="round" />
+      <path d="M150 312 C150 92 452 92 452 312" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
 
-      {/* Diagonal sheen, like light catching a polished surface */}
-      <rect x="-80" y="260" width="820" height="140" fill={`url(#${id}-sweep)`} transform="rotate(-16 320 330)" />
+      {/* rim back + opening */}
+      <ellipse cx="300" cy="305" rx="162" ry="32" fill={u("rim")} />
+      <ellipse cx="300" cy="305" rx="148" ry="24" fill="#0b3c9e" />
 
-      {/* Grounded floor plane for depth */}
-      <rect x="0" y="600" width="640" height="160" fill={`url(#${id}-floor)`} />
-      <line x1="0" y1="608" x2="640" y2="608" stroke="#D7AAA4" strokeOpacity="0.16" strokeWidth="1" />
-
-      {/* Fine sparkle accents */}
-      <g fill="#F5E7E4">
-        <path
-          d="M96 118c.9 6.3 2.1 9.2 5.3 12.8 3.6 3.1 6.5 4.3 12.8 5.3-6.3.9-9.2 2.1-12.8 5.3-3.1 3.6-4.3 6.5-5.3 12.8-.9-6.3-2.1-9.2-5.3-12.8-3.6-3.1-6.5-4.3-12.8-5.3 6.3-.9 9.2-2.1 12.8-5.3 3.1-3.6 4.3-6.5 5.3-12.8Z"
-          opacity="0.9"
-        />
-        <path
-          d="M508 300c.6 4.4 1.5 6.4 3.7 8.9 2.5 2.2 4.5 3 8.9 3.7-4.4.6-6.4 1.5-8.9 3.7-2.2 2.5-3 4.5-3.7 8.9-.6-4.4-1.5-6.4-3.7-8.9-2.5-2.2-4.5-3-8.9-3.7 4.4-.6 6.4-1.5 8.9-3.7 2.2-2.5 3-4.5 3.7-8.9Z"
-          opacity="0.7"
-        />
+      {/* blue pompom duster */}
+      <g>
+        <path d="M232 330 L168 150" stroke="#ffd23f" strokeWidth="12" strokeLinecap="round" />
+        <path d="M232 330 L168 150" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+        <g transform="translate(160 128)">
+          {Array.from({ length: 28 }, (_, i) => {
+            const a = (i / 28) * Math.PI * 2;
+            const r = 52 + (i % 3) * 6;
+            return (
+              <line
+                key={i}
+                x1="0"
+                y1="0"
+                x2={Math.round(Math.cos(a) * r)}
+                y2={Math.round(Math.sin(a) * r)}
+                stroke={i % 2 ? "#3a8bff" : "#5aa2ff"}
+                strokeWidth="9"
+                strokeLinecap="round"
+              />
+            );
+          })}
+          <circle r="40" fill={u("pom")} />
+          <circle cx="-12" cy="-14" r="12" fill="#ffffff" opacity="0.35" />
+        </g>
       </g>
 
-      <rect width="640" height="760" fill={`url(#${id}-grain)`} opacity="0.5" />
-      <rect width="640" height="760" fill={`url(#${id}-vignette)`} />
-      <rect x="0.5" y="0.5" width="639" height="759" rx="23.5" stroke="#D7AAA4" strokeOpacity="0.18" fill="none" />
+      {/* yellow scrub brush */}
+      <g transform="rotate(24 410 230)">
+        <rect x="396" y="150" width="26" height="190" rx="13" fill={u("yellow")} />
+        <rect x="402" y="160" width="6" height="160" rx="3" fill="#ffffff" opacity="0.5" />
+        <rect x="378" y="70" width="62" height="92" rx="14" fill={u("yellow")} />
+        <g stroke="#1f2a44" strokeWidth="5" strokeLinecap="round" opacity="0.85">
+          {Array.from({ length: 6 }, (_, i) => (
+            <line key={i} x1={386 + i * 9.5} y1="70" x2={386 + i * 9.5} y2="40" />
+          ))}
+        </g>
+      </g>
+
+      {/* teal spray bottle */}
+      <SprayBottle x={330} y={170} width={76} height={170} bodyFill={u("teal")} liquidFill="#0f8fb3" labelColor="#1f6bff" />
+
+      {/* yellow spray bottle */}
+      <SprayBottle x={248} y={205} width={66} height={140} bodyFill={u("yellow")} labelColor="#f08a00" headColor="#ffffff" flip />
+
+      {/* white microfiber roll */}
+      <g transform="rotate(-14 385 270)">
+        <rect x="360" y="215" width="58" height="110" rx="16" fill="#f4f8ff" />
+        <g stroke="#d6e4fb" strokeWidth="4">
+          {Array.from({ length: 6 }, (_, i) => (
+            <line key={i} x1="364" y1={232 + i * 16} x2="414" y2={226 + i * 16} />
+          ))}
+        </g>
+      </g>
+
+      {/* bucket body (front) */}
+      <path d="M138 305 A162 32 0 0 0 462 305 L426 512 Q300 548 174 512 Z" fill={u("bucket")} />
+      <path d="M164 360 Q300 392 436 360" stroke="#0e3fa6" strokeWidth="5" fill="none" opacity="0.35" />
+      <path d="M176 470 Q300 500 424 470" stroke="#0e3fa6" strokeWidth="5" fill="none" opacity="0.35" />
+      <path d="M196 340 L214 500" stroke="#ffffff" strokeWidth="14" strokeLinecap="round" opacity="0.22" />
+      <path d="M138 305 A162 32 0 0 0 462 305" stroke="#8fc0ff" strokeWidth="10" fill="none" strokeLinecap="round" />
+      <path d="M150 314 A150 28 0 0 0 450 314" stroke="#ffffff" strokeWidth="2.5" fill="none" opacity="0.6" />
+      {/* handle lugs */}
+      <circle cx="150" cy="316" r="10" fill="#d4e2f7" />
+      <circle cx="452" cy="316" r="10" fill="#d4e2f7" />
+
+      {/* sponge on the rim */}
+      <g transform="rotate(-10 196 318)">
+        <rect x="150" y="300" width="96" height="44" rx="10" fill="#ffd23f" />
+        <rect x="150" y="300" width="96" height="15" rx="7" fill="#4ccf8f" />
+        {[166, 186, 206, 226].map((cx) => (
+          <circle key={cx} cx={cx} cy="330" r="3.5" fill="#e0a800" />
+        ))}
+      </g>
+
+      {/* pink cloth draped over the rim */}
+      <path d="M392 296 Q430 286 456 300 L470 380 Q448 392 430 380 Q414 372 404 384 Z" fill={u("pink")} />
+      <path d="M408 300 L420 372" stroke="#ffffff" strokeWidth="3" opacity="0.4" />
+
+      {/* water splash */}
+      <g>
+        <path
+          d="M140 470 C100 455 70 420 84 380 C92 410 112 425 130 428 C112 400 110 360 132 330 C134 370 148 400 166 420 C160 450 152 462 140 470 Z"
+          fill={u("water")}
+        />
+        <path d="M100 392 C108 410 118 420 128 424" stroke="#ffffff" strokeWidth="4" fill="none" strokeLinecap="round" opacity="0.8" />
+        <circle cx="72" cy="356" r="9" fill={u("water")} />
+        <circle cx="104" cy="318" r="6" fill={u("water")} />
+        <circle cx="60" cy="410" r="5" fill={u("water")} />
+        <path d="M58 300 q6 12 0 18 q-6 -6 0 -18Z" fill="#7cb9ff" />
+      </g>
+
+      {/* folded cloth at the base */}
+      <g transform="rotate(-4 470 520)">
+        <rect x="408" y="498" width="128" height="40" rx="10" fill={u("pink")} />
+        <rect x="408" y="498" width="128" height="12" rx="6" fill="#ffffff" opacity="0.35" />
+      </g>
+
+      {/* bubbles */}
+      <Bubble cx={470} cy={120} r={34} fill={u("bubble")} />
+      <Bubble cx={530} cy={210} r={16} fill={u("bubble")} />
+      <Bubble cx={92} cy={210} r={22} fill={u("bubble")} />
+      <Bubble cx={300} cy={60} r={14} fill={u("bubble")} />
+      <Bubble cx={520} cy={420} r={24} fill={u("bubble")} />
+      <Bubble cx={52} cy={470} r={12} fill={u("bubble")} />
+
+      <Glint cx={552} cy={300} size={14} fill="#ffd23f" />
+      <Glint cx={120} cy={120} size={10} fill="#1f6bff" opacity={0.7} />
+      <Glint cx={360} cy={110} size={9} fill="#ffffff" />
     </svg>
   );
 }

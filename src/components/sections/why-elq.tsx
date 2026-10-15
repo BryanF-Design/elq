@@ -1,43 +1,68 @@
 import { useTranslations } from "next-intl";
+import { BadgeCheck } from "lucide-react";
 import { whyElqIcons } from "@/data/why-elq";
+import { SceneArt } from "@/components/illustrations/scene-art";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
-import { GalleryMotif } from "@/components/illustrations/gallery-motif";
+import { cn } from "@/lib/utils";
 
 export function WhyElq() {
   const t = useTranslations("whyElq");
+  const tHero = useTranslations("hero");
+  const tGallery = useTranslations("gallery");
   const points = t.raw("points") as { title: string; description: string }[];
+  const galleryItems = tGallery.raw("items") as { alt: string }[];
 
   return (
-    <section id="why-elq" className="py-24 lg:py-32">
-      <div className="container-elq grid gap-16 lg:grid-cols-2 lg:gap-20">
-        <Reveal direction="right" className="relative order-2 aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border-strong lg:order-1">
-          <GalleryMotif motif="living" className="h-full w-full" />
-          <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-border-strong bg-background/70 px-5 py-4 backdrop-blur-md">
-            <p className="font-heading text-lg text-champagne">{t("heading")}</p>
-          </div>
-        </Reveal>
-
-        <div className="order-1 lg:order-2">
+    <section id="why-elq" className="relative overflow-hidden py-20 lg:py-28">
+      <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-sky/60 blur-[120px]" aria-hidden="true" />
+      <div className="container-elq relative grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+        <div>
           <SectionHeading eyebrow={t("eyebrow")} heading={t("heading")} subheading={t("subheading")} />
 
-          <ul className="mt-10 flex flex-col divide-y divide-border">
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {points.map((point, index) => {
               const Icon = whyElqIcons[index];
               return (
-                <Reveal key={point.title} as="li" delay={index * 0.06} className="flex gap-5 py-5 first:pt-0">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border-strong text-rose">
+                <Reveal
+                  as="li"
+                  key={point.title}
+                  delay={index * 0.06}
+                  className={cn(
+                    "flex gap-4 rounded-3xl border border-border bg-white/80 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-soft",
+                    index === points.length - 1 && points.length % 2 === 1 && "sm:col-span-2",
+                  )}
+                >
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-brand-soft text-brand">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <div>
-                    <h3 className="font-heading text-lg text-foreground">{point.title}</h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-muted sm:text-base">{point.description}</p>
-                  </div>
+                  <span>
+                    <span className="block font-heading text-base font-bold text-foreground">{point.title}</span>
+                    <span className="mt-1 block text-sm leading-relaxed text-muted">{point.description}</span>
+                  </span>
                 </Reveal>
               );
             })}
           </ul>
         </div>
+
+        <Reveal direction="left" className="relative mx-auto w-full max-w-md">
+          <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] shadow-card">
+            <SceneArt motif="floor" label={galleryItems[1]?.alt} />
+          </div>
+          <div className="absolute -bottom-10 -left-6 aspect-square w-[52%] overflow-hidden rounded-[2rem] border-[6px] border-white shadow-card sm:-left-12">
+            <SceneArt motif="detail" label={galleryItems[4]?.alt} />
+          </div>
+          <div className="glass animate-float absolute -right-3 top-8 flex items-center gap-3 rounded-2xl px-4 py-3 sm:-right-8">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sun text-navy">
+              <BadgeCheck className="h-5 w-5" aria-hidden="true" />
+            </span>
+            <span className="leading-tight">
+              <span className="block text-sm font-bold text-foreground">{tHero("floatingEstimate")}</span>
+              <span className="block text-xs text-muted">{tHero("floatingEstimateLabel")}</span>
+            </span>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -61,7 +61,7 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
     <div
       ref={containerRef}
       className={cn(
-        "relative aspect-[4/3] w-full touch-none select-none overflow-hidden rounded-[1.5rem] border border-border-strong",
+        "relative aspect-[4/3] w-full touch-none select-none overflow-hidden rounded-[1.75rem]",
         className,
       )}
       onPointerMove={handlePointerMove}
@@ -80,15 +80,15 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
         <BeforeAfterArt state="before" className="absolute inset-0 h-full w-full" />
       </div>
 
-      <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-background/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-muted-strong backdrop-blur-sm">
+      <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-navy/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
         {beforeLabel}
       </span>
-      <span className="pointer-events-none absolute right-4 top-4 rounded-full bg-background/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-champagne backdrop-blur-sm">
+      <span className="pointer-events-none absolute right-4 top-4 rounded-full bg-brand px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-brand">
         {afterLabel}
       </span>
 
       <div
-        className="absolute inset-y-0 w-px bg-rose"
+        className="absolute inset-y-0 w-1 -translate-x-1/2 bg-white shadow-[0_0_12px_rgba(13,27,62,0.3)]"
         style={{ left: `${percentage}%` }}
         aria-hidden="true"
       />
@@ -102,7 +102,7 @@ export function BeforeAfterSlider({ beforeLabel, afterLabel, className }: Before
         onPointerDown={startDragging}
         onKeyDown={handleKeyDown}
         style={{ left: `${percentage}%` }}
-        className="absolute top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border border-rose bg-background text-rose shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        className="absolute top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize items-center justify-center rounded-full border-4 border-white bg-brand text-white shadow-brand focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun"
       >
         <GripVertical className="h-4 w-4" aria-hidden="true" />
       </div>
